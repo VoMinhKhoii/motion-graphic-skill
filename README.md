@@ -129,6 +129,10 @@ The skill is instructions plus local scripts; it has no hooks, no MCP server and
 
 Nothing is sent anywhere by the skill itself. Music and sound effects are fetched by you from their own sites under their own licences.
 
+## Privacy
+
+No server, account, analytics or telemetry; everything the skill makes stays in your project. Details: [PRIVACY.md](PRIVACY.md).
+
 ## Licence
 
 Code and documentation are MIT (see `LICENSE`). The Kallo films, frames and backgrounds under `skills/motion-graphic/examples/kallo-launch-film/` and the demo [docs/demo.webp](docs/demo.webp) are shared for reference only; don't reuse them in other products.
