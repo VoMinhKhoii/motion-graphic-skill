@@ -117,6 +117,17 @@ The skill checks these in its first step and works around what is missing.
 
 Use it as evidence of the method, not as a style to copy. Your film should come from your own taste and your own references.
 
+## What the skill runs, downloads and sends
+
+The skill is instructions plus local scripts; it has no hooks, no MCP server and no telemetry. When you use it, your agent may, with your approval as usual:
+- **Run local tools:** `ffmpeg`/`ffprobe`, Python scripts (frame analysis, OCR through macOS Vision or tesseract, the sound mixer), Node (Remotion renders, Playwright web capture), `xcrun simctl`/`idb` (iOS Simulator), `adb` (Android).
+- **Download reference films** you or it chose, with `yt-dlp`, from public posts on YouTube, X, TikTok and Threads, into your project's `film/research/` folder. They stay on your machine; the skill tells the agent to keep them private and out of git.
+- **Read search and profile pages** of X and Threads in a browser session you are logged in to, only if your agent has a browser tool and you allow it. It reads page text and links; it never reads cookies or tokens and never posts.
+- **Install packages** you approve: `npm ci` in the copied Remotion starter, optionally Playwright.
+- **Record your own app** in a simulator, emulator or browser, using a dev account and data you choose.
+
+Nothing is sent anywhere by the skill itself. Music and sound effects are fetched by you from their own sites under their own licences.
+
 ## Licence
 
 Code and documentation are MIT (see `LICENSE`). The Kallo films, frames and backgrounds under `skills/motion-graphic/examples/kallo-launch-film/` and the demo `docs/demo.webp` are shared for reference only; don't reuse them in other products.
