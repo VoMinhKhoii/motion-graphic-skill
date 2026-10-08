@@ -124,13 +124,14 @@ The skill is instructions plus local scripts; it has no hooks, no MCP server and
 - **Download reference films** you or it chose, with `yt-dlp`, from public posts on YouTube, X, TikTok and Threads, into your project's `film/research/` folder. They stay on your machine; the skill tells the agent to keep them private and out of git.
 - **Read search and profile pages** of X and Threads in a browser session you are logged in to, only if your agent has a browser tool and you allow it. It reads page text and links; it never reads cookies or tokens and never posts.
 - **Install packages** you approve: `npm ci` in the copied Remotion starter, optionally Playwright.
-- **Record your own app** in a simulator, emulator or browser, using a dev account and data you choose.
+- **Record your own app** in a simulator, emulator or browser, using a dev account and data you choose. For a web app behind a login, the web recorder can load a Playwright login-state file that you create yourself for that dev account (`storageState` in the steps file); it is read only by the local recorder and must never be committed.
+- **Never use your browser's cookies or saved sessions** for downloading. If a reference film needs a login, the skill asks you to save it yourself.
 
 Nothing is sent anywhere by the skill itself. Music and sound effects are fetched by you from their own sites under their own licences.
 
 ## Licence
 
-Code and documentation are MIT (see `LICENSE`). The Kallo films, frames and backgrounds under `skills/motion-graphic/examples/kallo-launch-film/` and the demo `docs/demo.webp` are shared for reference only; don't reuse them in other products.
+Code and documentation are MIT (see `LICENSE`). The Kallo films, frames and backgrounds under `skills/motion-graphic/examples/kallo-launch-film/` and the demo [docs/demo.webp](docs/demo.webp) are shared for reference only; don't reuse them in other products.
 
 No reference film, sound effect or music track is redistributed: films are linked, named and measured, and sound effects and music are listed with their sources so you can fetch them under their own licences.
 

@@ -52,7 +52,7 @@ open corpus/index.html
 
 Resumable: a step is skipped when its output is newer than the film and, for text, was measured with the same OCR engine and settings (changing `--ocr` re-measures text; `--force` redoes everything). `composition.json` is redone when `text.json` is newer or `composition.SETTINGS` changed. Re-run after adding films, or delete one film's `transitions.json`/`text.json` to redo that step. `aggregate.py` and `report.py` re-run at the end every time; both are fast (seconds), and `aggregate.py` re-applies the text thresholds from the stored OCR lines, so tuning `text_frames.py` constants needs no new OCR.
 
-Per film it writes `corpus/films/<stem>/`: `meta.json`, `transitions.json`, `text.json`, `composition.json`, `strip.jpg`, and, from `../analyze_video.py`, `stats.json`, `cuts.json`, `curves.json`, `sheet.jpg`, `curves.png`, `spectrogram.png`.
+Per film it writes `corpus/films/<stem>/`: `meta.json`, `transitions.json`, `text.json`, `composition.json`, strip.jpg, and, from `../analyze_video.py`, `stats.json`, `cuts.json`, `curves.json`, sheet.jpg, curves.png, spectrogram.png.
 
 **Timing** (Apple M2, one job): about 1 s of compute per second of film. OCR is 0.6 s of it (Vision, accurate mode), transitions 0.25 s, `analyze_video.py` 0.12 s, composition 0.04 s (a 73 s 1080p film took 2.5 s). The 25-film test corpus (13 minutes of film, one 5-minute film included) took about 3.5 minutes with `--jobs 3`. Use `--ocr tesseract` off macOS, or `--ocr none` to skip text entirely.
 

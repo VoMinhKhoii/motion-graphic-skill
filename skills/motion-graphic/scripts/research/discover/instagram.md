@@ -5,7 +5,7 @@ Instagram is the least reliable source to automate. Use it for accounts that pos
 ## What works
 
 - **A single public post or reel URL with yt-dlp.** `yt-dlp https://www.instagram.com/reel/<code>/` often works logged out, and `../download.sh` accepts these URLs. Instagram rate-limits logged-out requests quickly; after a few downloads it answers with a login redirect.
-- **With the user's browser cookies, if they choose to.** `yt-dlp --cookies-from-browser chrome <url>` (or `safari`, `firefox`) lets yt-dlp read the user's own session from their browser profile. This is the user's decision, made per session: say what it does and ask. Never copy cookies out of a browser by other means, and never store them in the project.
+- **A post that needs a login.** Do not use the user's browser cookies or session. Ask the user to save the video themselves (most apps offer a save or share-to-files option) and drop the file into `film/research/vids/`.
 - **Listing a profile in the browser.** Open `https://www.instagram.com/<handle>/reels/` in the user's logged-in browser and collect the reel links from the DOM: every `a[href*="/reel/"]`. The `threads_collect.js` pattern works with that selector change; or scroll and copy the links by hand.
 - **Cross-posts.** Threads profiles mirror many Instagram reels, and the Threads route (`threads_search.md`) gives a direct MP4.
 

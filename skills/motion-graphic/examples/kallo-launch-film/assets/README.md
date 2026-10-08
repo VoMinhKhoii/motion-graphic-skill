@@ -20,15 +20,15 @@ Frames rendered from the teaser's own edit for the sign-off storyboards, 540x960
 
 | File | What it shows |
 |---|---|
-| `teaser-dir-a-leak.jpg` | Direction A, "the leak": the raw phone screen, the breakfast's rows landed and the total still counting up toward 504 kcal. |
-| `teaser-dir-b-sentence.jpg` | Direction B, "one sentence": the result card alone on the soft gradient, no phone. |
-| `teaser-dir-c-number.jpg` | Direction C, "the number": type only, the meal reduced to its total, 504 kcal. |
-| `teaser-en-01-home.jpg` | English, the first beat: the whole phone on Home in the noon room, the finger arriving. |
-| `teaser-en-02-rows-land.jpg` | English: the result rows landed (677 + 136 = 813 kcal), the finger heading for Save. |
-| `teaser-en-03-saved-gauge.jpg` | English: "Meal saved", the day's gauge at 1,119 kcal left and the macros filled. |
-| `teaser-en-04-coming-soon.jpg` | English end card: the wordmark and "Coming soon". |
-| `teaser-vi-03-result.jpg` | A Vietnamese take of an earlier meal (cơm tấm, 908 kcal), replaced by the owner with a lighter phở in the final cut. |
-| `teaser-vi-04-sap-ra-mat.jpg` | Vietnamese end card: the wordmark and "Sắp ra mắt" ("Coming soon"). |
+| [teaser-dir-a-leak.jpg](storyboard/teaser-dir-a-leak.jpg) | Direction A, "the leak": the raw phone screen, the breakfast's rows landed and the total still counting up toward 504 kcal. |
+| [teaser-dir-b-sentence.jpg](storyboard/teaser-dir-b-sentence.jpg) | Direction B, "one sentence": the result card alone on the soft gradient, no phone. |
+| [teaser-dir-c-number.jpg](storyboard/teaser-dir-c-number.jpg) | Direction C, "the number": type only, the meal reduced to its total, 504 kcal. |
+| [teaser-en-01-home.jpg](storyboard/teaser-en-01-home.jpg) | English, the first beat: the whole phone on Home in the noon room, the finger arriving. |
+| [teaser-en-02-rows-land.jpg](storyboard/teaser-en-02-rows-land.jpg) | English: the result rows landed (677 + 136 = 813 kcal), the finger heading for Save. |
+| [teaser-en-03-saved-gauge.jpg](storyboard/teaser-en-03-saved-gauge.jpg) | English: "Meal saved", the day's gauge at 1,119 kcal left and the macros filled. |
+| [teaser-en-04-coming-soon.jpg](storyboard/teaser-en-04-coming-soon.jpg) | English end card: the wordmark and "Coming soon". |
+| [teaser-vi-03-result.jpg](storyboard/teaser-vi-03-result.jpg) | A Vietnamese take of an earlier meal (cơm tấm, 908 kcal), replaced by the owner with a lighter phở in the final cut. |
+| [teaser-vi-04-sap-ra-mat.jpg](storyboard/teaser-vi-04-sap-ra-mat.jpg) | Vietnamese end card: the wordmark and "Sắp ra mắt" ("Coming soon"). |
 
 ## rooms/
 
@@ -36,9 +36,9 @@ The six room backgrounds of the "Places" look, one per time of day. Generated wi
 
 | File | Time of day | Used for |
 |---|---|---|
-| `dawn_kitchen.jpg` | Dawn | A kitchen counter at sunrise, avocado toast on a plate. |
-| `morning_desk.jpg` | Morning | A light wooden desk with notebooks and a coffee cup. |
-| `noon_desk.jpg` | Noon | A desk with a laptop and a packed lunch. Also the teaser's room. |
-| `afternoon_pantry.jpg` | Afternoon | A table set for a small celebration, cake and cups. |
-| `evening_table.jpg` | Evening | A dinner table with a pizza box and candles, for the shared pizza. |
-| `night_room.jpg` | Night | A living room by lamplight, a city at night outside. |
+| [dawn_kitchen.jpg](rooms/dawn_kitchen.jpg) | Dawn | A kitchen counter at sunrise, avocado toast on a plate. |
+| [morning_desk.jpg](rooms/morning_desk.jpg) | Morning | A light wooden desk with notebooks and a coffee cup. |
+| [noon_desk.jpg](rooms/noon_desk.jpg) | Noon | A desk with a laptop and a packed lunch. Also the teaser's room. |
+| [afternoon_pantry.jpg](rooms/afternoon_pantry.jpg) | Afternoon | A table set for a small celebration, cake and cups. |
+| [evening_table.jpg](rooms/evening_table.jpg) | Evening | A dinner table with a pizza box and candles, for the shared pizza. |
+| [night_room.jpg](rooms/night_room.jpg) | Night | A living room by lamplight, a city at night outside. |

@@ -16,8 +16,7 @@
 #
 # Profiles are the reliable route. Hashtag (tiktok:tag), sound and search extraction are marked broken or
 # blocked in current yt-dlp; find accounts on the web (web_queries.md) and list their profiles instead.
-# If TikTok answers with an empty list, retry later or add --cookies-from-browser <browser> yourself (your choice;
-# never copy cookies out of a browser by other means). Needs yt-dlp and python3.
+# If TikTok answers with an empty list, retry later, or ask the user to paste the profile's video links. Needs yt-dlp and python3.
 set -euo pipefail
 h="${1:?usage: tiktok.sh <handle> [outdir] [max]}"; h="${h#@}"
 out="${2:-lists}"; max="${3:-200}"

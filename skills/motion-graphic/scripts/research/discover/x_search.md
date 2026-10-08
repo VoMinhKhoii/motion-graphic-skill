@@ -9,7 +9,7 @@ X is where most software launch films are posted first, often only there. Listin
 3. You run `x_collect.js` in the page. It scrolls in steps and returns the URLs of posts that carry a video, with the post text, date and like count it can read from the page.
 4. You save the URLs to `urls.txt` and run `../download.sh urls.txt vids/`. yt-dlp downloads public X post videos without login.
 
-**Read the page DOM only.** Never read, copy, export or replay cookies, auth tokens, `ct0`/`auth_token` values or request headers, and never call X's internal APIs with them. If a download fails for a post that needs login (age-gated, protected account), skip it or let the user choose `--cookies-from-browser` themselves.
+**Read the page DOM only.** Never read, copy, export or replay cookies, auth tokens, `ct0`/`auth_token` values or request headers, and never call X's internal APIs with them. If a download fails for a post that needs login (age-gated, protected account), skip it or ask the user to save the video themselves.
 
 ## Search URLs
 
