@@ -10,7 +10,7 @@
 #
 # Writes <outdir>/<uploader>__<id>.mp4 plus <same>.info.json (title, description, views, date), capped at
 # 1080p, merged to MP4. Files already present are skipped, so the script can be re-run after a failure.
-# X/Twitter: public posts usually work without login; if one fails, add --cookies-from-browser <browser> to ARGS.
+# X/Twitter: public posts usually work without login; if one needs a login, ask the user to save it themselves.
 # These are third-party films: study them locally, describe them in words and numbers, never redistribute them.
 set -uo pipefail
 list="${1:?usage: download.sh <urls.txt> [outdir]}"; out="${2:-vids}"

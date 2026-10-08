@@ -98,7 +98,7 @@ The Nothing "Updating…" grammar in type only. The meal sentence is typed in la
 - **Why:** very readable as a sound-off feed post, and the numbers still come from real analyses.
 - **Risk:** no real UI on screen, so it says less about the app, and it drifts toward a generic motion graphic.
 
-Storyboard frames of all three, rendered from stand-in footage, are in [assets/storyboard/](assets/storyboard/) (`teaser-dir-a-leak.jpg`, `teaser-dir-b-sentence.jpg`, `teaser-dir-c-number.jpg`).
+Storyboard frames of all three, rendered from stand-in footage, are in [assets/storyboard/](assets/storyboard/) ([teaser-dir-a-leak.jpg](assets/storyboard/teaser-dir-a-leak.jpg), [teaser-dir-b-sentence.jpg](assets/storyboard/teaser-dir-b-sentence.jpg), [teaser-dir-c-number.jpg](assets/storyboard/teaser-dir-c-number.jpg)).
 
 ## The owner's flow
 
