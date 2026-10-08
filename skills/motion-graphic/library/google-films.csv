@@ -1,0 +1,39 @@
+account,url,url_basis,title,media_date,duration_s,watched_pass,transitions_logged,transition_mix,demo_share,text_share,note,media_id
+Google,,not recovered (only the media id survives),Gemma 4,2026-06-03,98.1,y,4,UI state change 4,1.0,0.0,"An unedited 98 s Mac screen recording: no cuts, camera moves, text cards or logo. Kept only as a counter-example.",2062201414101700608
+Google,,not recovered (only the media id survives),Google Fi,2026-06-09,73.3,y,16,morph 5; push/slide 3; mask reveal 3; hard cut 2; camera move 1; wipe 1; scale-out 1,0.1,0.47,"Motion graphics plus footage of people; its ""UI"" is drawn phone outlines, not screen recordings.",2064393970860298240
+Google,https://x.com/Google/status/2072409250312425824,post 226 s after the media upload; durations agree (12 s),Chat | Spark,2026-07-01,11.7,y,8,scale-into 2; UI state change 1; morph 1; type-on/type-off 1; camera move 1; hard cut 1; scale-out 1,0.44,0.0,,2072408304215531520
+Google,https://x.com/Google/status/2084306026577244627,post 237 s after the media upload; durations agree (50 s),Gemini Spark,2026-08-03,49.3,y,13,camera move 3; crossfade 3; scale-out 2; push/slide 2; scale-into 1; morph 1; hard cut 1,0.81,0.0,,2084305032363565056
+Google,https://x.com/Google/status/2087948901265354817,"likely: post 1199 s after the media upload; the listing shows the post's longest video (73 s), so this may be one of several videos in it",Spark clock,2026-08-13,61.1,y,13,match cut 4; hard cut 3; crossfade 2; scale-out 2; UI state change 1; mask reveal 1,0.53,0.05,,2087943873561546752
+Google,https://x.com/Google/status/2094914713620492750,post 53 s after the media upload; durations agree (8 s),Android Drop,2026-09-01,8.0,y,6,push/slide 3; crossfade 2; mask reveal 1,0.53,0.44,"Title splits (""Android"" up, ""Drop"" down) and the first UI card rises from the gap (exemplar move 12).",2094914492710658048
+Google,https://x.com/Google/status/2097795419296477256,post 279 s after the media upload; durations agree (99 s),Pics,2026-09-09,98.7,y,16,push/slide 3; hard cut 3; crossfade 2; scale-into 2; morph 2; UI state change 2; type-on/type-off 1; scale-out 1,0.62,0.28,,2097794247709601793
+Google,https://x.com/Google/status/2105331451294314809,post 951 s after the media upload; durations agree (47 s),Skills,2026-09-30,47.2,y,12,crossfade 5; camera move 2; hard cut 2; morph 1; scale-into 1; push/slide 1,0.64,0.04,Square 1:1 frame; shows only the part of the UI in use.,2105327461248466944
+Google,,not recovered (only the media id survives),,2026-06-03,,n,,,,,,2062223831058563072
+Google,,not recovered (only the media id survives),,2026-06-03,,n,,,,,,2062224242804932609
+Google,,not recovered (only the media id survives),,2026-06-05,,n,,,,,,2062923610554023936
+Google,,not recovered (only the media id survives),,2026-06-05,,n,,,,,,2062924125287436288
+Google,https://x.com/Google/status/2064366595963527562,likely: post 1035 s after the media upload; duration not checked,,2026-06-09,,n,,,,,,2064362253919326208
+Google,https://x.com/Google/status/2070175556503568394,likely: post 124 s after the media upload; duration not checked,,2026-06-25,,n,,,,,,2070175034388234240
+Google,https://x.com/Google/status/2070188803340353693,likely: post 492 s after the media upload; duration not checked,,2026-06-25,,n,,,,,,2070186738006310913
+Google,,not recovered (only the media id survives),,2026-06-25,,n,,,,,,2070202441853763584
+Google,https://x.com/Google/status/2071988395421900897,likely: post 354 s after the media upload; duration not checked,,2026-06-30,,n,,,,,,2071986909308391424
+Google,https://x.com/Google/status/2072004128310476856,likely: post 105 s after the media upload; duration not checked,,2026-06-30,,n,,,,,,2072003686214090752
+Google,https://x.com/Google/status/2078965240914469372,likely: post 35 s after the media upload; duration not checked,,2026-07-19,,n,,,,,,2078965095007182849
+Google,https://x.com/Google/status/2079589747366724030,likely: post 2784 s after the media upload; duration not checked,,2026-07-21,,n,,,,,,2079578068440506368
+Google,https://x.com/Google/status/2079933689669013595,likely: post 95 s after the media upload; duration not checked,,2026-07-22,,n,,,,,,2079933292275519489
+Google,https://x.com/Google/status/2082834775757177228,likely: post 372 s after the media upload; duration not checked,,2026-07-30,,n,,,,,,2082833216730206208
+Google,https://x.com/Google/status/2087675375677501568,likely: post 870 s after the media upload; duration not checked,,2026-08-12,,n,,,,,,2087671727572549633
+Google,https://x.com/Google/status/2087948901265354817,likely: post 1349 s after the media upload; duration not checked,,2026-08-13,,n,,,,,,2087943244390780928
+Google,https://x.com/Google/status/2087948901265354817,likely: post 1258 s after the media upload; duration not checked,,2026-08-13,,n,,,,,,2087943625401372672
+Google,,not recovered (only the media id survives),,2026-08-13,,n,,,,,,2087949446151561216
+Google,https://x.com/Google/status/2088366086316315080,likely: post 132 s after the media upload; duration not checked,,2026-08-14,,n,,,,,,2088365534198857729
+Google,https://x.com/Google/status/2092620237908631795,likely: post 184 s after the media upload; duration not checked,,2026-08-26,,n,,,,,,2092619464202215424
+Google,https://x.com/Google/status/2092659278632894576,likely: post 441 s after the media upload; duration not checked,,2026-08-26,,n,,,,,,2092657429695586304
+Google,,not recovered (only the media id survives),,2026-08-27,,n,,,,,,2092995849668210688
+Google,https://x.com/Google/status/2094840325789430066,likely: post 2528 s after the media upload; duration not checked,,2026-09-01,,n,,,,,,2094829723788419072
+Google,https://x.com/Google/status/2099631885626274299,likely: post 54 s after the media upload; duration not checked,,2026-09-14,,n,,,,,,2099631659972808705
+Google,https://x.com/Google/status/2100694623341683030,likely: post 389 s after the media upload; duration not checked,,2026-09-17,,n,,,,,,2100692993493647360
+Google,https://x.com/Google/status/2102051060558750141,likely: post 82 s after the media upload; duration not checked,,2026-09-21,,n,,,,,,2102050716948758529
+Google,https://x.com/Google/status/2102079370990940478,likely: post 95 s after the media upload; duration not checked,,2026-09-21,,n,,,,,,2102078970472587264
+Google,https://x.com/Google/status/2102079370990940478,likely: post 83 s after the media upload; duration not checked,,2026-09-21,,n,,,,,,2102079024369418240
+Google,https://x.com/Google/status/2102079370990940478,likely: post 69 s after the media upload; duration not checked,,2026-09-21,,n,,,,,,2102079081269309440
+Google,https://x.com/Google/status/2102079370990940478,likely: post 53 s after the media upload; duration not checked,,2026-09-21,,n,,,,,,2102079147342217216

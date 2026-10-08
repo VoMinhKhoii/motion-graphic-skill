@@ -1,0 +1,907 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Kallo Launch Intros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Lora:ital,wght@0,400;1,400&display=swap">
+<style>
+  :root {
+    --page: #F8F7F4;
+    --card: #FFFFFF;
+    --ink: #141413;
+    --muted: #7A7870;
+    --hair: #E2DFD4;
+    --wash: #F0EAE0;
+    --accent: #C9A87C;
+    --bezel: #141413;
+    --ring: 0 0 0 1px #E2DFD4;
+    --lift: 0 28px 56px rgba(20, 20, 19, .16);
+    --sans: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --serif: "Lora", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page: #131311; --card: #1C1B18; --ink: #F1F0EB; --muted: #A3A199;
+      --hair: #302E29; --wash: #2A2620; --bezel: #050505;
+      --ring: 0 0 0 1px #3A3833; --lift: 0 28px 56px rgba(0, 0, 0, .55);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --page: #131311; --card: #1C1B18; --ink: #F1F0EB; --muted: #A3A199;
+    --hair: #302E29; --wash: #2A2620; --bezel: #050505;
+    --ring: 0 0 0 1px #3A3833; --lift: 0 28px 56px rgba(0, 0, 0, .55);
+    color-scheme: dark;
+  }
+
+  body { background: var(--page); color: var(--ink); font: 400 15px/1.5 var(--sans); -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 32px 72px; }
+  h1 { font: 400 clamp(30px, 4.2vw, 42px)/1.12 var(--serif); letter-spacing: -.02em; margin: 0 0 12px; text-wrap: balance; }
+  h1 em { font-style: italic; }
+  h2 { font: 600 16px/1.3 var(--sans); letter-spacing: -.01em; margin: 0; }
+  .lede { color: var(--muted); max-width: 62ch; margin: 0; }
+  .muted { color: var(--muted); }
+
+  .layout { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "stage dirs" "stage panel";
+    grid-template-rows: auto 1fr; column-gap: 48px; row-gap: 28px; margin-top: 36px; align-items: start; }
+  .dir-group { grid-area: dirs; }
+  .stage { grid-area: stage; }
+  .panel { grid-area: panel; }
+  @media (max-width: 880px) {
+    .layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "dirs" "stage" "panel"; grid-template-rows: auto; row-gap: 22px; }
+  }
+
+  /* ---- stage: the phone and its transport ---- */
+  .stage { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); display: grid; justify-items: center; gap: 14px; }
+  @media (max-width: 880px) { .stage { position: static; } }
+  .phone-slot { position: relative; width: calc(407px * var(--k, .72)); height: calc(866px * var(--k, .72)); }
+  .phone { position: absolute; inset: 0 auto auto 0; width: 407px; height: 866px; transform: scale(var(--k, .72)); transform-origin: 0 0;
+    border-radius: 62px; background: var(--bezel); padding: 7px; box-shadow: var(--lift), var(--ring); cursor: pointer; border: 0; }
+  .phone:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; }
+  .transport { width: min(100%, 360px); display: grid; gap: 8px; }
+  .transport-row { display: flex; align-items: center; gap: 10px; }
+  .icon-btn { flex: none; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--hair); background: var(--card); color: var(--ink);
+    display: grid; place-items: center; cursor: pointer; }
+  .icon-btn:hover { background: var(--wash); }
+  .icon-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .icon-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  #scrub { flex: 1; min-width: 0; accent-color: var(--accent); }
+  .readout { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .readout b { color: var(--ink); font-weight: 400; }
+
+  /* ---- panel: pickers and notes ---- */
+  .panel { display: grid; gap: 28px; min-width: 0; }
+  .group { display: grid; gap: 10px; }
+  .group-label { font-size: 13px; color: var(--muted); }
+  .dirs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  @media (max-width: 480px) { .dir { padding: 10px 12px; border-radius: 14px; } .dir-line { font-size: 12px; line-height: 1.35; } .tag { display: none; } }
+  .dir { text-align: left; border: 1px solid var(--hair); background: var(--card); color: var(--ink); border-radius: 16px; padding: 12px 14px;
+    font: inherit; cursor: pointer; display: grid; gap: 2px; align-content: start; }
+  .dir:hover { background: var(--wash); }
+  .dir:focus-visible, .chip:focus-visible, .toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .dir[aria-checked="true"] { background: var(--wash); border-color: var(--wash); }
+  .dir.is-pick { grid-column: 1 / -1; }
+  .dir-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .dir-name { font-weight: 400; font-size: 16px; }
+  .dir[aria-checked="true"] .dir-name { font-weight: 600; }
+  .dir-line { font-size: 13px; color: var(--muted); }
+  .tag { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--hair); border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { border: 1px solid var(--hair); background: var(--card); color: var(--ink); border-radius: 999px; padding: 7px 14px; font: inherit; font-size: 14px; cursor: pointer; }
+  .chip:hover { background: var(--wash); }
+  .chip[aria-checked="true"] { background: var(--wash); border-color: var(--wash); font-weight: 600; }
+  .options { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 18px; }
+  .toggle { display: inline-flex; align-items: center; gap: 10px; border: 0; background: none; color: var(--ink); font: inherit; font-size: 14px; cursor: pointer; padding: 6px 0; }
+  .toggle .knob { width: 38px; height: 22px; border-radius: 999px; background: var(--hair); position: relative; transition: background .2s; flex: none; }
+  .toggle .knob::after { content: ""; position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.2); transition: transform .2s; }
+  .toggle[aria-checked="true"] .knob { background: var(--ink); }
+  .toggle[aria-checked="true"] .knob::after { transform: translateX(16px); }
+
+  .notes { background: var(--card); border-radius: 22px; padding: 20px; display: grid; gap: 16px; box-shadow: var(--ring); }
+  .notes-head { display: grid; gap: 4px; }
+  .notes-title { font: 400 22px/1.2 var(--serif); letter-spacing: -.01em; margin: 0; }
+  .notes-title em { font-style: italic; }
+  .beats { display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: 14px; row-gap: 8px; margin: 0; font-size: 14px; }
+  .beats dt { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .beats dd { margin: 0; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; border-top: 1px solid var(--hair); padding-top: 14px; font-size: 14px; }
+  .facts b { display: block; font-weight: 400; color: var(--muted); font-size: 13px; margin-bottom: 2px; }
+
+  .ships { margin-top: 56px; display: grid; gap: 14px; max-width: 760px; }
+  .ships ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+  .ships li::marker { color: var(--muted); }
+
+  /* ---- the device (always the light app, whatever the page theme) ---- */
+  .screen { position: relative; width: 393px; height: 852px; border-radius: 55px; overflow: hidden; background: #F8F7F4; isolation: isolate;
+    font-family: var(--sans); color: #141413; color-scheme: light; }
+  /* The dashboard as it renders on a 393pt iPhone (Vietnamese), measured from a device screenshot. */
+  .m-app { position: absolute; inset: 0; background: #F8F7F4; color: #141413; }
+  .m-app > * { position: absolute; }
+  .m-wm { left: 11.4px; top: 55.2px; height: 26px; width: 69.8px; fill: #141413; }
+  .m-avatar { left: 340px; top: 51px; width: 37px; height: 37px; border-radius: 50%;
+    background: radial-gradient(circle at 42% 34%, #D9CCBC 0 18%, #A48B72 45%, #6B5646 80%); }
+  .m-week { left: 12px; width: 369px; top: 105px; height: 76px; display: grid; grid-template-columns: repeat(7, 1fr); }
+  .m-day { position: relative; display: grid; justify-items: center; align-content: start; padding-top: 8px; }
+  .m-day span { font-size: 15px; line-height: 20px; color: #7A7870; }
+  .m-day.sel { background: #fff; border-radius: 13px; box-shadow: inset 0 0 0 1px #E2DFD4; margin: 0 3px; }
+  .m-day.sel span { color: #141413; }
+  .m-ring { position: relative; width: 36px; height: 36px; margin-top: 3px; }
+  .m-ring svg { position: absolute; inset: 0; transform: rotate(-90deg); fill: none; stroke-width: 2.6; overflow: visible; }
+  .m-ring .trk { stroke: #EDECE7; } .m-ring .arc { stroke: #C9A87C; stroke-linecap: round; }
+  .m-ring i { position: absolute; inset: 0; display: grid; place-items: center; font-style: normal; font-size: 18px; }
+  .m-day.future i { color: #7A7870; }
+  .m-h { left: 12px; font-weight: 600; font-size: 17px; letter-spacing: -.3px; line-height: 22px; }
+  .m-h-meta { right: 12px; font-size: 16px; color: #7A7870; line-height: 22px; }
+  .m-dials { left: 0; top: 0; width: 393px; height: 852px; fill: none; stroke: #EDECE7; stroke-linecap: round; }
+  .m-center { left: 0; width: 393px; text-align: center; line-height: 1.25; }
+  .m-kcal { top: 330px; font-size: 44px; line-height: 1; letter-spacing: -1px; }
+  .m-muted { color: #7A7870; }
+  .m-mlabel { width: 123px; top: 419px; display: flex; justify-content: center; align-items: center; gap: 3px;
+    font-size: 11px; letter-spacing: .3px; color: #7A7870; line-height: 16px; }
+  .m-mlabel svg { width: 14px; height: 14px; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .m-mval { width: 123px; text-align: center; line-height: 1.2; }
+  .m-card { left: 12px; width: 369px; background: #fff; border-radius: 22px; }
+  .m-empty { top: 571px; height: 164px; }
+  .m-empty svg { position: absolute; left: 149.5px; top: 14px; width: 70px; height: 59px; fill: #141413; }
+  .m-empty .t { position: absolute; left: 0; right: 0; top: 92px; text-align: center; font: 400 20px/26px var(--serif); }
+  .m-empty .s { position: absolute; left: 0; right: 0; top: 128px; text-align: center; font-size: 16px; line-height: 22px; color: #7A7870; }
+  .m-weight { top: 747px; height: 140px; }
+  .m-weight b { position: absolute; left: 16px; top: 52px; font-weight: 400; font-size: 40px; line-height: 1; letter-spacing: -1px; }
+  .m-weight span { position: absolute; left: 100px; top: 70px; font-size: 16px; color: #7A7870; }
+  .m-nav { left: 8.5px; top: 744px; width: 376px; height: 72px; border-radius: 36px; background: #fff;
+    box-shadow: 0 10px 30px rgba(20, 20, 19, .10), 0 1px 3px rgba(20, 20, 19, .06); }
+  .m-nav > * { position: absolute; top: 24px; }
+  .m-nav svg { width: 24px; height: 24px; fill: none; stroke: #7A7870; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .m-nav .on { stroke: #141413; stroke-width: 2; }
+  .m-plus { left: 162px; top: 10px !important; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #FFD2B0, #DCC4FF); display: grid; place-items: center; }
+  .m-plus svg { stroke: #141413; }
+  .c-svg { position: absolute; inset: 0; width: 393px; height: 852px; }
+  .sb { position: absolute; left: 0; right: 0; top: 0; height: 54px; pointer-events: none; z-index: 3; }
+  .sb-time { position: absolute; left: 52px; top: 17px; font-weight: 600; font-size: 17px; letter-spacing: -.2px; }
+  .sb-icons { position: absolute; right: 34px; top: 21px; display: flex; gap: 6px; align-items: center; }
+  .island { position: absolute; left: 133.5px; top: 11px; width: 126px; height: 37px; border-radius: 19px; background: #000; z-index: 4; }
+  .homebar { position: absolute; left: 129.5px; bottom: 8px; width: 134px; height: 5px; border-radius: 3px; background: #141413; z-index: 4; }
+  .stamp { position: absolute; left: 50%; bottom: 128px; transform: translateX(-50%); z-index: 5; font-size: 13px; color: #7A7870;
+    background: rgba(255,255,255,.9); border-radius: 999px; padding: 4px 12px; white-space: nowrap; pointer-events: none; }
+
+  /* contact sheet (review aid) */
+  .sheet { display: grid; grid-template-columns: repeat(8, 147px); gap: 10px; padding: 12px; }
+  .sheet.band { grid-template-columns: repeat(6, 200px); }
+  .sheet.band .mini { width: 196.5px; height: 90px; border-radius: 8px; }
+  .sheet.band .mini .screen { transform: scale(.5) translateY(-335px); }
+  .sheet figure { margin: 0; display: grid; gap: 4px; justify-items: center; font-size: 12px; color: var(--muted); }
+  .sheet .mini { width: 147.4px; height: 319.5px; position: relative; overflow: hidden; border-radius: 20px; box-shadow: var(--ring); }
+  .sheet .mini .screen { transform: scale(.375); transform-origin: 0 0; }
+
+  @media (prefers-reduced-motion: reduce) { .toggle .knob, .toggle .knob::after { transition: none; } }
+</style>
+
+<div class="wrap" id="app">
+  <header>
+    <h1>The K backs up, <em>and Kallo clacks in</em></h1>
+    <p class="lede">Launch intros for Kallo, built from the real wordmark. Each one starts on the black K from the iOS launch screen, plays while the app loads underneath, and leaves once the app is ready. You picked Clack with Lift &amp; fade, and that is what the app now plays. The other directions stay here for comparison. Tap the phone to replay.</p>
+  </header>
+
+  <div class="layout">
+    <div class="group dir-group">
+      <div class="group-label" id="dir-label">Direction</div>
+      <div class="dirs" role="radiogroup" aria-labelledby="dir-label" id="dirs"></div>
+    </div>
+
+    <section class="stage" aria-label="Preview">
+      <div class="phone-slot" id="slot">
+        <button class="phone" id="phone" type="button" aria-label="Replay the intro"></button>
+      </div>
+      <div class="transport">
+        <div class="transport-row">
+          <button class="icon-btn" id="play" type="button" aria-label="Pause"></button>
+          <input id="scrub" type="range" min="-420" max="3000" step="1" value="0" aria-label="Scrub the timeline">
+          <button class="icon-btn" id="replay" type="button" aria-label="Replay from the start">
+            <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+          </button>
+        </div>
+        <div class="readout"><span id="phase">iOS launch screen</span><b id="clock">0.00 s</b></div>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Reveal and options">
+      <div class="group">
+        <div class="group-label" id="exit-label">Reveal</div>
+        <div class="chips" role="radiogroup" aria-labelledby="exit-label" id="exits"></div>
+      </div>
+      <div class="options">
+        <div class="group">
+          <div class="group-label" id="load-label">App load time</div>
+          <div class="chips" role="radiogroup" aria-labelledby="load-label" id="loads"></div>
+        </div>
+        <div class="group">
+          <div class="group-label" id="speed-label">Speed</div>
+          <div class="chips" role="radiogroup" aria-labelledby="speed-label" id="speeds"></div>
+        </div>
+        <div class="group">
+          <div class="group-label">Accessibility</div>
+          <button class="toggle" id="reduce" type="button" role="switch" aria-checked="false"><span class="knob"></span>Reduce motion</button>
+        </div>
+      </div>
+      <article class="notes" id="notes" aria-live="polite"></article>
+    </section>
+  </div>
+
+  <section class="ships">
+    <h2>Ships with every direction</h2>
+    <ul>
+      <li>The iOS and Android launch screens show the K in ink black on the app canvas (<span class="muted">#141413 on #F8F7F4</span>) instead of the brown K on the older cream.</li>
+      <li>Flutter's first frame draws the same K at the same size and spot, so the native-to-Flutter swap is invisible. The K holds still for a quarter second while iOS fades its launch screen out.</li>
+      <li>The app boots underneath from the first frame: the dashboard starts fetching while the letters move, so the intro spends load time instead of adding to it.</li>
+      <li>It plays once per cold start. Coming back from the background shows the app straight away. Taps are held until the reveal.</li>
+      <li>Reduce Motion swaps the choreography for a straight crossfade from the K to the wordmark, then a fade into the app.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+const DATA = {"glyphs":{"K":"M20 68H188V776H20ZM444 68H658L430 345H216ZM216 457H439L676 776H453Z","a":"M944 559H923Q896 559 868.5 561.5Q841 564 819.5 571.0Q798 578 784.0 591.5Q770 605 770 627Q770 641 776.5 651.0Q783 661 793.0 667.0Q803 673 816.0 675.5Q829 678 841 678Q891 678 917.5 650.5Q944 623 944 576ZM643 346Q687 304 745.5 283.0Q804 262 865 262Q928 262 971.5 277.5Q1015 293 1042.0 325.5Q1069 358 1081.5 407.5Q1094 457 1094 525V776H944V723H941Q922 754 883.5 771.0Q845 788 800 788Q770 788 738.0 780.0Q706 772 679.5 754.0Q653 736 636.0 706.0Q619 676 619 632Q619 578 648.5 545.0Q678 512 724.5 494.0Q771 476 828.0 470.0Q885 464 939 464V456Q939 419 913.0 401.5Q887 384 849 384Q814 384 781.5 399.0Q749 414 726 435Z","l1":"M1158 776V20H1324V776Z","l2":"M1396 776V20H1562V776Z","o":"M2160 525Q2160 586 2138.0 635.5Q2116 685 2078.0 719.5Q2040 754 1990.0 773.0Q1940 792 1883 792Q1827 792 1776.5 773.0Q1726 754 1688.5 719.5Q1651 685 1629.0 635.5Q1607 586 1607 525Q1607 464 1629.0 415.0Q1651 366 1688.5 332.0Q1726 298 1776.5 280.0Q1827 262 1883 262Q1940 262 1990.0 280.0Q2040 298 2078.0 332.0Q2116 366 2138.0 415.0Q2160 464 2160 525ZM2002 525Q2002 501 1994.0 478.0Q1986 455 1971.0 437.5Q1956 420 1934.0 409.0Q1912 398 1883 398Q1854 398 1832.0 409.0Q1810 420 1795.5 437.5Q1781 455 1773.5 478.0Q1766 501 1766 525Q1766 549 1773.5 572.0Q1781 595 1796.0 613.5Q1811 632 1833.0 643.0Q1855 654 1884 654Q1913 654 1935.0 643.0Q1957 632 1972.0 613.5Q1987 595 1994.5 572.0Q2002 549 2002 525Z"},"counter":"M2002 525Q2002 501 1994.0 478.0Q1986 455 1971.0 437.5Q1956 420 1934.0 409.0Q1912 398 1883 398Q1854 398 1832.0 409.0Q1810 420 1795.5 437.5Q1781 455 1773.5 478.0Q1766 501 1766 525Q1766 549 1773.5 572.0Q1781 595 1796.0 613.5Q1811 632 1833.0 643.0Q1855 654 1884 654Q1913 654 1935.0 643.0Q1957 632 1972.0 613.5Q1987 595 1994.5 572.0Q2002 549 2002 525Z","full":"M20 68H188V776H20ZM444 68H658L430 345H216ZM216 457H439L676 776H453ZM944 559H923Q896 559 868.5 561.5Q841 564 819.5 571.0Q798 578 784.0 591.5Q770 605 770 627Q770 641 776.5 651.0Q783 661 793.0 667.0Q803 673 816.0 675.5Q829 678 841 678Q891 678 917.5 650.5Q944 623 944 576ZM643 346Q687 304 745.5 283.0Q804 262 865 262Q928 262 971.5 277.5Q1015 293 1042.0 325.5Q1069 358 1081.5 407.5Q1094 457 1094 525V776H944V723H941Q922 754 883.5 771.0Q845 788 800 788Q770 788 738.0 780.0Q706 772 679.5 754.0Q653 736 636.0 706.0Q619 676 619 632Q619 578 648.5 545.0Q678 512 724.5 494.0Q771 476 828.0 470.0Q885 464 939 464V456Q939 419 913.0 401.5Q887 384 849 384Q814 384 781.5 399.0Q749 414 726 435ZM1158 776V20H1324V776ZM1396 776V20H1562V776ZM2160 525Q2160 586 2138.0 635.5Q2116 685 2078.0 719.5Q2040 754 1990.0 773.0Q1940 792 1883 792Q1827 792 1776.5 773.0Q1726 754 1688.5 719.5Q1651 685 1629.0 635.5Q1607 586 1607 525Q1607 464 1629.0 415.0Q1651 366 1688.5 332.0Q1726 298 1776.5 280.0Q1827 262 1883 262Q1940 262 1990.0 280.0Q2040 298 2078.0 332.0Q2116 366 2138.0 415.0Q2160 464 2160 525ZM2002 525Q2002 501 1994.0 478.0Q1986 455 1971.0 437.5Q1956 420 1934.0 409.0Q1912 398 1883 398Q1854 398 1832.0 409.0Q1810 420 1795.5 437.5Q1781 455 1773.5 478.0Q1766 501 1766 525Q1766 549 1773.5 572.0Q1781 595 1796.0 613.5Q1811 632 1833.0 643.0Q1855 654 1884 654Q1913 654 1935.0 643.0Q1957 632 1972.0 613.5Q1987 595 1994.5 572.0Q2002 549 2002 525Z"};
+
+/* ------------------------------------------------------------------ *
+ * Geometry. Everything below is in wordmark units (the 2180x812
+ * viewBox of kallo-wordmark.svg) until the stage maps it to points.
+ * ------------------------------------------------------------------ */
+const W = 393, H = 852, CX = W / 2, CY = H / 2;
+const K_PT = 72;                 // launch-screen K height in points
+const S0 = K_PT / 708;           // points per unit at rest (the K is 708 units tall)
+const U = { x: 1090, y: 422 };   // unit point pinned to the screen centre: ink centre x, K centre y
+const BASE = 776;                // baseline
+const HOLD = 260;                // K holds still while iOS fades its launch screen (200 ms)
+const NATIVE = 420;              // preview only: the iOS launch screen before Flutter's first frame
+const ORDER = ['K', 'a', 'l1', 'l2', 'o'];
+const LETTERS = ['a', 'l1', 'l2', 'o'];
+const BOX = { K: [20, 68, 676, 776], a: [619, 262, 1094, 788], l1: [1158, 20, 1324, 776], l2: [1396, 20, 1562, 776], o: [1607, 262, 2160, 792] };
+const COUNTER = { x: 1884, y: 526 };            // centre of the o's inner hole
+const HEADER = { left: 11.4, top: 55.2, height: 26 }; // dashboard masthead wordmark box, measured on device
+const K_START_X = U.x - (BOX.K[0] + BOX.K[2]) / 2; // 742: shifts the K's centre onto U
+
+/* ---- easing ---- */
+const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+const seg = (t, start, dur) => clamp((t - start) / dur, 0, 1);
+const lerp = (a, b, p) => a + (b - a) * p;
+const outCubic = p => 1 - (1 - p) ** 3;
+const inCubic = p => p ** 3;
+const inOutCubic = p => (p < .5 ? 4 * p ** 3 : 1 - (-2 * p + 2) ** 3 / 2);
+const outQuad = p => 1 - (1 - p) ** 2;
+const inQuad = p => p * p;
+const inOutSine = p => (1 - Math.cos(Math.PI * p)) / 2;
+const outExpo = p => (p >= 1 ? 1 : 1 - 2 ** (-10 * p));
+/** Spring step 0 → 1. f in Hz, z = damping ratio, t in ms. */
+function spring(t, f, z) {
+  if (t <= 0) return 0;
+  const s = t / 1000, w = 2 * Math.PI * f;
+  if (z >= 1) return 1 - Math.exp(-w * s) * (1 + w * s);
+  const wd = w * Math.sqrt(1 - z * z);
+  return 1 - Math.exp(-z * w * s) * (Math.cos(wd * s) + (z * w / wd) * Math.sin(wd * s));
+}
+/** Impulse response: 0 at t = 0, rings out. Peaks near 0.6. */
+function kick(t, f, z) {
+  if (t <= 0) return 0;
+  const s = t / 1000, w = 2 * Math.PI * f, wd = w * Math.sqrt(1 - z * z);
+  return Math.exp(-z * w * s) * Math.sin(wd * s);
+}
+const mix = (a, b, p) => {
+  const c = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+  const [x, y] = [c(a), c(b)];
+  return `rgb(${x.map((v, i) => Math.round(lerp(v, y[i], p))).join(',')})`;
+};
+const rest = () => ({ x: 0, y: 0, rot: 0, sx: 1, sy: 1, skew: 0, spin: 0, rp: 'center', sp: 'bottom' });
+const offRight = id => CX / S0 + U.x - BOX[id][0] + 40; // units to push a letter's left edge past the screen
+
+/* ------------------------------------------------------------------ *
+ * Directions. pose(id, t) is a pure function of time (ms since
+ * Flutter's first frame); the engine adds idle, skew and the exit.
+ * ------------------------------------------------------------------ */
+/** A blink: 0 open → 1 shut → 0 over 200 ms. */
+function blink(t) {
+  if (t <= 0 || t >= 200) return 0;
+  return t < 70 ? inQuad(t / 70) : 1 - outCubic((t - 70) / 130);
+}
+const SLOT = 800; // the invisible line the letters rise out of: just under the o's overshoot (792)
+
+const DIRS = {
+  rise: {
+    name: 'Rise', line: 'The word rises in the K’s wake, and the o winks', end: 1180, skewGain: 0, idleKind: 'wink', slot: true,
+    pose(id, t) {
+      const T = t - HOLD, p = rest();
+      p.x = K_START_X * (1 - spring(T, 1.5, 0.78)); // the whole word glides as one, with a hair of overshoot
+      if (id === 'K') return p;
+      const i = LETTERS.indexOf(id), start = [60, 110, 160, 230][i];
+      const depth = SLOT + 24 - BOX[id][1];         // fully below the slot line
+      const rise = dt => spring(T - start - dt, 2.6, 0.62);
+      p.y = depth * (1 - rise(0));
+      const v = (depth * (rise(0) - rise(8))) / 8;    // upward speed, units / ms
+      p.sy = 1 + clamp(0.008 * v, -0.05, 0.07);      // a little stretch at speed
+      p.sx = 1 - 0.4 * (p.sy - 1);
+      if (id === 'o') {
+        const b = blink(T - 700);
+        if (b > 0) { p.sp = 'center'; p.sy = 1 - 0.88 * b; p.sx = 1 + 0.08 * b; }
+      }
+      return p;
+    },
+  },
+  glide: {
+    name: 'Glide', line: 'Your brief, played straight', end: 1300, skewGain: 0.011, idleKind: 'sheen',
+    pose(id, t) {
+      const T = t - HOLD, p = rest();
+      if (id === 'K') {
+        const wind = 38 * outQuad(seg(T, 0, 100));
+        p.x = (K_START_X + wind) * (1 - spring(T - 100, 1.75, 1));
+        return p;
+      }
+      const i = LETTERS.indexOf(id), start = 150 + 75 * i;
+      p.x = (offRight(id) + 30) * (1 - outExpo(seg(T, start, 640)));
+      p.skew = 0.16 * kick(T - (start + 420), 4.2, 0.32); // the tops keep going after the feet stop
+      return p;
+    },
+  },
+  hop: {
+    name: 'Hop', line: 'The letters have legs', end: 1480, skewGain: 0, idleKind: 'bounce',
+    pose(id, t) {
+      const T = t - HOLD, p = rest();
+      if (id === 'K') {
+        const crouch = outQuad(seg(T, 0, 120)) * (1 - seg(T, 120, 50));
+        const f = seg(T, 120, 380);
+        p.x = K_START_X * (1 - inOutSine(f));
+        p.y = -240 * 4 * f * (1 - f);
+        const air = f > 0 && f < 1 ? 1 - Math.sin(Math.PI * f) : 0;
+        const sq = 0.14 * crouch + 0.26 * kick(T - 500, 4.5, 0.32) - 0.1 * air;
+        p.sy = 1 - sq; p.sx = 1 + 0.45 * sq;
+        return p;
+      }
+      const i = LETTERS.indexOf(id), start = 240 + 80 * i, F = 390, land = start + F;
+      const f = seg(T, start, F);
+      p.x = (offRight(id) + 20) * (1 - f);
+      p.y = -{ a: 300, l1: 380, l2: 340, o: 420 }[id] * 4 * f * (1 - f);
+      const flying = f > 0 && f < 1;
+      if (id === 'a') p.rot = -2 * Math.PI * inOutSine(f);
+      if (id === 'l1' || id === 'l2') {
+        const st = flying ? Math.sin(Math.PI * f) : 0;
+        p.sy = 1 + 0.12 * st; p.sx = 1 - 0.08 * st;
+      }
+      let sq = 0.24 * kick(T - land, 5, 0.34);
+      if (id === 'o') {
+        const b1 = seg(T, land, 220), b2 = seg(T, land + 220, 120);
+        p.y += -150 * 4 * b1 * (1 - b1) - 40 * 4 * b2 * (1 - b2);
+        sq += 0.14 * kick(T - (land + 220), 5, 0.34) + 0.06 * kick(T - (land + 340), 5, 0.34);
+      }
+      p.sy *= 1 - sq; p.sx *= 1 + 0.4 * sq;
+      return p;
+    },
+  },
+  clack: {
+    name: 'Clack', line: 'A little train brakes at the K', end: 1250, skewGain: 0.008, idleKind: 'ripple',
+    pose(id, t) {
+      const T = t - HOLD, p = rest();
+      const A0 = 470, GAP = 62, V = 5.4;          // arrival of the a, spacing, speed (units / ms)
+      const arrive = j => A0 + GAP * j;
+      const k = ORDER.indexOf(id);
+      if (id === 'K') {
+        p.x = K_START_X * (1 - inOutCubic(seg(T, 0, 420)));
+      } else {
+        const j = k - 1, tau = T - arrive(j);
+        if (tau < 0) {
+          p.x = V * -tau;
+        } else {
+          // Hits the car ahead: the front is pinned, the body squashes, then rebounds.
+          const w = 2 * Math.PI * 6 / 1000, z = 0.42, wd = w * Math.sqrt(1 - z * z);
+          const e = -(V / wd) * Math.exp(-z * w * tau) * Math.sin(wd * tau);
+          if (e < 0) {
+            const width = BOX[id][2] - BOX[id][0];
+            const c = Math.max(-0.2, (0.55 * e) / width);
+            p.sp = 'left'; p.sx = 1 + c; p.sy = 1 - 0.35 * c;
+          } else {
+            p.x = e;
+          }
+          p.skew = 0.1 * kick(tau, 5, 0.35);
+        }
+      }
+      // Every arrival shoves the whole coupled chain ahead of it.
+      for (let j = Math.max(0, k - 1); j < 4; j++) p.x -= (j === 0 ? 34 : 16) * kick(T - arrive(j), 6, 0.38);
+      return p;
+    },
+  },
+  chopsticks: {
+    name: 'Chopsticks', line: 'Dinner is served', end: 1480, skewGain: 0, idleKind: 'coin',
+    pose(id, t) {
+      const T = t - HOLD, p = rest();
+      if (id === 'K') { p.x = K_START_X * (1 - spring(T, 1.8, 1)); return p; }
+      if (id === 'a') {
+        const e = outCubic(seg(T, 110, 640));
+        p.x = (offRight('a') + 80) * (1 - e);
+        p.rot = p.x / 262 - 0.07 * kick(T - 750, 3.4, 0.3); // rolls like a wheel, rocks once it stops
+        return p;
+      }
+      if (id === 'l1' || id === 'l2') {
+        const first = id === 'l1', start = first ? 300 : 360, F = 320, land = start + F;
+        const f = seg(T, start, F);
+        p.rp = 'bottom';
+        p.y = -4700 * (1 - f * f);
+        const tilt = first ? -0.34 : 0.27;
+        p.rot = f < 1 ? tilt * (1 - 0.35 * f) : tilt * 0.65 * (1 - spring(T - land, 3.6, 0.3));
+        p.rot += (first ? 0.05 : -0.05) * kick(T - 740, 5.5, 0.4); // the pair taps together
+        const sq = 0.16 * kick(T - land, 6, 0.4);
+        p.sy = 1 - sq; p.sx = 1 + 0.35 * sq;
+        return p;
+      }
+      p.x = (offRight('o') + 60) * (1 - outCubic(seg(T, 460, 520)));
+      p.spin = 5 * Math.PI * (1 - seg(T, 460, 760)) ** 2.2; // a coin on its edge, settling face-on
+      return p;
+    },
+  },
+};
+
+/* Idle loops: only while the intro is done and the app is not. */
+function idleOffset(kind, id, tau) {
+  const p = rest();
+  if (kind === 'bounce' && id === 'o') {
+    const c = tau % 640, b = seg(c, 0, 470);
+    p.y = -160 * 4 * b * (1 - b);
+    const sq = 0.2 * kick(c - 470, 5, 0.34);
+    p.sy = 1 - sq; p.sx = 1 + 0.4 * sq;
+  }
+  if (kind === 'ripple') {
+    const c = tau % 1200, delay = (4 - ORDER.indexOf(id)) * 55;
+    p.x = -26 * kick(c - delay, 6, 0.38);
+  }
+  if (kind === 'wink' && id === 'o') {
+    // First blink 0.4 s after the intro's own wink, then every 1.7 s (as in the app).
+    const b = blink((((tau - 280) % 1700) + 1700) % 1700);
+    if (b > 0) { p.sp = 'center'; p.sy = 1 - 0.88 * b; p.sx = 1 + 0.08 * b; }
+  }
+  if (kind === 'coin' && id === 'o') p.spin = 2 * Math.PI * inOutCubic(seg(tau % 1300, 0, 800));
+  return p;
+}
+function sheenAt(kind, tau) { // band centre in units, or null
+  if (kind !== 'sheen') return null;
+  const c = tau % 1500;
+  return c < 950 ? lerp(-500, 2700, inOutSine(c / 950)) : null;
+}
+
+/* Reveals. u = ms since the exit began. They edit the stage and effects in place. */
+const EXITS = {
+  lift: {
+    name: 'Lift & fade', dur: 420,
+    note: 'The word lifts a few points and fades as the canvas clears. Works for every destination.',
+    apply(u, st, fx) {
+      const p = seg(u, 0, 300);
+      st.ay -= 16 * inQuad(p);
+      fx.glyphAlpha = 1 - inQuad(p);
+      fx.curtainAlpha = 1 - inOutCubic(seg(u, 80, 320));
+    },
+  },
+  header: {
+    name: 'Into the header', dur: 620,
+    note: 'The word shrinks into the dashboard masthead, where the wordmark already lives, and becomes it. Falls back to Lift & fade on screens without one.',
+    apply(u, st, fx) {
+      const p = inOutCubic(seg(u, 0, 540));
+      const sH = HEADER.height / 812;
+      st.s = Math.exp(lerp(Math.log(st.s), Math.log(sH), p));
+      st.ax = lerp(st.ax, HEADER.left + U.x * sH, p);
+      st.ay = lerp(st.ay, HEADER.top + U.y * sH, p);
+      fx.curtainAlpha = 1 - inOutCubic(seg(u, 160, 420));
+      fx.landed = u >= 540;
+    },
+  },
+  portal: {
+    name: 'Through the o', dur: 680,
+    note: 'The o opens into the app like a porthole, turns to paper, and the camera flies through it. The boldest reveal.',
+    apply(u, st, fx) {
+      const zoom = Math.exp(Math.log(46) * inCubic(seg(u, 120, 520)));
+      st.ax = CX + S0 * (COUNTER.x - U.x); st.ay = CY + S0 * (COUNTER.y - U.y);
+      st.ux = COUNTER.x; st.uy = COUNTER.y; st.s = S0 * zoom;
+      fx.hole = outCubic(seg(u, 0, 200));
+      fx.oPaper = inOutCubic(seg(u, 150, 230));        // the ring becomes part of the page: an iris, not a black flash
+      fx.glyphAlpha = 1 - inQuad(seg(u, 220, 220));    // K a l l fly off and fade
+      fx.curtainAlpha = 1 - seg(u, 580, 100);
+      fx.oAlpha = fx.curtainAlpha;
+    },
+  },
+};
+const LOADS = { fast: { name: 'Fast', readyAt: 300 }, slow: { name: 'Slow network, 3 s', readyAt: 3000 } };
+const SPEEDS = { 1: { name: '1×' }, 0.25: { name: '¼×' } };
+
+const NOTES = {
+  rise: {
+    title: 'Rise, <em>with a wink</em>',
+    beats: [
+      ['0.00', 'The black K holds where the launch screen left it.'],
+      ['0.26', 'The K glides left and brings the word with it.'],
+      ['0.32', 'a, l, l, o rise out of an invisible line in its wake, each with a small bounce.'],
+      ['0.96', 'The o winks.'],
+      ['1.18', 'The o opens into the app.'],
+    ],
+    idle: 'The o blinks now and then, like it is waiting with you.',
+    feel: 'Clean and modern, with one beat of character. Short enough to see every day.',
+  },
+  glide: {
+    title: 'Glide, <em>your brief played straight</em>',
+    beats: [
+      ['0.00', 'The black K sits where the launch screen left it.'],
+      ['0.26', 'It winds up a hair to the right, then glides left.'],
+      ['0.41', 'a, l, l, o sail in from the right edge in a quick stagger.'],
+      ['0.83', 'Each one stops on its feet while its top keeps going, a small jelly lean.'],
+    ],
+    idle: 'A soft sheen sweeps across the word.',
+    feel: 'Calm and premium. Closest to the app today.',
+  },
+  hop: {
+    title: 'Hop, <em>the letters have legs</em>',
+    beats: [
+      ['0.00', 'The K crouches.'],
+      ['0.38', 'It leaps left in an arc and lands with a squash.'],
+      ['0.50', 'a backflips in, the two l’s pogo in, stretching in the air.'],
+      ['1.13', 'o bounces in last like a ball, twice, and settles.'],
+    ],
+    idle: 'The o keeps bouncing in place.',
+    feel: 'The most playful. Cartoon physics.',
+  },
+  clack: {
+    title: 'Clack, <em>a little train brakes at the K</em>',
+    beats: [
+      ['0.00', 'The K backs up to the left to make room.'],
+      ['0.26', 'a, l, l, o roll in from the right as a spaced-out train.'],
+      ['0.73', 'The a hits the K. Each car behind clacks into the one ahead, squashes and rebounds.'],
+      ['0.92', 'The whole word rocks once and stops.'],
+    ],
+    idle: 'The cars bump again, right to left, like a train at a stop.',
+    feel: 'Tactile and quick. The literal brief with real physics.',
+  },
+  chopsticks: {
+    title: 'Chopsticks, <em>dinner is served</em>',
+    beats: [
+      ['0.00', 'The K slides left.'],
+      ['0.37', 'a rolls in like a wheel and rocks to a stop.'],
+      ['0.56', 'The two l’s drop from above like a pair of chopsticks, land tilted and tap together.'],
+      ['0.72', 'o rolls in spinning like a coin on its edge and settles face-on.'],
+    ],
+    idle: 'The o spins again, like a coin on the table.',
+    feel: 'Tells the food story. The most memorable.',
+  },
+};
+const RECOMMENDED = 'clack';
+const RECOMMENDED_EXIT = 'lift';
+
+/* ------------------------------------------------------------------ *
+ * One screen: the dashboard mock, the curtain and the glyphs.
+ * ------------------------------------------------------------------ */
+const ICON = {
+  house: '<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+  pen: '<path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/>',
+  plus: '<path d="M5 12h14"/><path d="M12 5v14"/>',
+  apple: '<path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/>',
+  users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+};
+const svgIcon = (d, cls = '') => `<svg viewBox="0 0 24 24" class="${cls}" aria-hidden="true">${d}</svg>`;
+
+/** A 240° dial arc, centred on the bottom gap, drawn as a round-capped stroke. */
+function dialArc(cx, cy, r, band) {
+  const cap = (band / 2 / r) * 180 / Math.PI; // round caps sit inside the sweep, as the sector's corners do
+  const a0 = (210 - cap) * Math.PI / 180, a1 = (-30 + cap) * Math.PI / 180;
+  const pt = a => `${(cx + r * Math.cos(a)).toFixed(2)} ${(cy - r * Math.sin(a)).toFixed(2)}`;
+  return `<path d="M${pt(a0)} A${r} ${r} 0 1 1 ${pt(a1)}" stroke-width="${band}"/>`;
+}
+const MACRO_ICON = {
+  beef: '<circle cx="12.5" cy="8.5" r="2.5"/><path d="M12.5 2a6.5 6.5 0 0 0-6.22 4.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3A6.5 6.5 0 0 0 12.5 2Z"/><path d="m18.5 6 2.19 4.5a6.48 6.48 0 0 1 .31 2 6.49 6.49 0 0 1-2.6 5.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5"/>',
+  wheat: '<path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"/><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/>',
+  droplet: '<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>',
+};
+const HEDGEHOG = "<path d=\"M123 8.9c-1.4.4-4.4 1.8-6.6 2.9-4.1 2.1-4.2 2.1-4.7.2-1.1-4.1-8-1.6-15 5.4-3.9 3.8-4.9 4.4-4.4 2.3q0-1.1-2.3-1.2c-1.9 0-3.2 1.2-5.7 5.5-1.8 3-3.3 6.5-3.3 7.7 0 2-.4 2.2-2.4 1.7-5.2-1.3-9 8-5.3 13 1.1 1.5.9 3-1.3 9.4-2.4 7.1-2.8 7.7-5.5 7.9-3.1.2-5.5 2.5-5.5 5.2 0 .9 1.6 4.2 3.6 7.4 3.3 5.4 3.5 6 2.1 7.5-1.5 1.4-1.9 1.4-5.1-.3-3.2-1.8-3.6-1.8-6-.2-3.3 2.2-3.5 7.6-.5 11.8l2 2.9h-3q-3 .1-4.4 2-1.4 2-8.6 3.5C24.4 107 15.5 112.9 13 122c-.6 2.5-1.6 5.3-2.1 6.2-1.8 3.6-1 12.1 1.5 15.8 6.7 9.8 30.6 17 56.6 17 14.5 0 25.7-1.7 47-7.2 26.5-6.7 28.1-7 30.2-5.1 1.8 1.6 5.3 1.5 16.3-.6l10.1-2a34 34 0 0 0 12.8-4.7c2.1-1 4.3-3 4.8-4.4 1.9-4.6 2-29.6.2-39a89 89 0 0 1-1.5-15.7c.3-8.3-1.4-12.5-5.9-14.8-1.7-.9-3-2.4-3-3.4s-.9-3-2-4.4c-2.5-3.1-2.5-3.7-.1-3.7 4.9 0 3.7-5.4-2.4-11.6-2.4-2.4-3.8-4.4-3.1-4.4s1.9-.7 2.6-1.5c1.1-1.3.9-2-1.4-4.4a23 23 0 0 0-6.7-4.6c-3.6-1.7-3.8-2-2.4-3.5.8-.9 1.5-2.2 1.5-2.8 0-1.8-5.6-4.2-11-4.9-4.6-.5-4.9-.7-4.4-2.9.5-1.9.1-2.6-2.2-3.5-2.7-1-10-.7-15 .7-1.7.4-2.1.1-2-1.8s-.5-2.3-2.9-2.5c-1.6-.1-4.1.2-5.5.6m1.8 3.6c-1.6 1.6-11.8 7.3-10.7 5.9.7-.8 3.3-2.6 5.8-3.9 4.7-2.5 5.8-2.9 4.9-2m-21.9 6.2-4.3 4.8q-.7.7.4-1.5c1.1-2.2 5.8-6.9 6.9-7 .3 0-1.1 1.7-3 3.7m35.6-1.6c-3.2 1-6.1 1.6-6.4 1.4q-.2-.5 1-.9l4.4-1.4c1.7-.6 3.9-1 5-1s-.7.8-4 1.9M122.7 20a10 10 0 0 1-3.4 2c-1.1-.1 3.7-4 4.9-4q.8.2-1.5 2m-17.6 3.3-2.3 2.2 1.7-2.8q1.7-2.5 2.3-2.2c.6.3-.5 1.6-1.7 2.8m35.9-2.4q-.2.9-2 1.4t-2-.3q.2-.9 1.8-1.3l2-.6q.2 0 .2.8m16.9 1.5c-.2.2-3.3.6-6.9.9q-6.3.6-4-.3c2.5-.8 11.7-1.4 10.9-.6M131 24c0 .5-1 1.5-2.2 2.1-2.3 1.2-2.3 1.2-.4-1 2.1-2.3 2.6-2.6 2.6-1.1m-5 1q0 .9-1 1a1 1 0 0 1-1-1q.1-1 1-1t1 1m-39.4 5.6c-.8 2.7-1.5 4-1.5 3-.1-2.2 2.1-8.8 2.7-8.2.2.2-.3 2.6-1.2 5.2m27.4-4.9c0 .5-1.6 1.8-3.5 3.1-4.4 2.8-4.6 1.5-.2-1.5 3.7-2.5 3.7-2.5 3.7-1.6m-21.2 3c-1.6 3.9-3.2 5.4-1.8 1.9q1.7-4.8 2.5-4.6c.3 0-.1 1.2-.7 2.7m9.2 1.9c-1 2.1-1.9 3.3-2 2.6 0-1.6 3-7.5 3.6-7 .2.3-.5 2.2-1.6 4.4m35.5-2.1c-4 1.9-6.7 1.8-3.5 0a11 11 0 0 1 4.5-1.4q2.4 0-1 1.4m16.8-.8c-.7.2-2.1.2-3 0q-1.3-.5 1.2-.5 2.6 0 1.8.5m-11 2c-.7.2-2.1.2-3 0q-1.3-.5 1.2-.5 2.6 0 1.8.5m-46 1.8q-.6 1.4-1 1.1-.4-.5.2-1.5c.9-1.6 1.5-1.3.8.4m12.7 1.4a7 7 0 0 1-2.2 2.7q-1 .7-.3-.7c2.1-3.7 4.4-5.5 2.5-2m6.8 2c-1.8 1.6-3.5 2.7-3.7 2.5-.7-.7 4.2-5.4 5.6-5.4.7 0-.1 1.3-1.9 2.9m48.7-1.4 4 1.4-4-.6a55 55 0 0 1-6.5-1.4l-2.5-.7h2.5c1.4 0 4.3.6 6.5 1.3M148 34l-4 .9q-2 .3 0-.9a9 9 0 0 1 4-.9l2.5.1zm-13 .5a11 11 0 0 1-3.1 2.1c-1.7.8-2.8 1.1-2.4.4.4-.6 1.7-1.5 2.9-2 2.7-1.1 2.6-1.1 2.6-.5m-12.6 2.6c-1 1.1-2.8 2.5-3.9 3.1q-1.8.7 1.3-2.1c3.7-3.5 5.5-4.2 2.6-1m-41.4 2c0 .5-1 2.3-2.2 4L76.6 46l-1.3-2.2c-1.7-3.1-1.6-4.4.3-6.2 1.2-1.2 2-1.3 3.5-.6 1 .6 1.9 1.5 1.9 2.1m81.3-1.4a17 17 0 0 1-4.5 0c-1.3-.2-.3-.4 2.2-.4q4 0 2.3.4m-65.9 1.2c.4.5 3.1.9 6.1.8 3.2-.1 5.7.3 5.9.9s1.9 1.4 3.6 1.8q3.1.6 3.7 2.6.5 1.8.9 2c.2 0 2.6-1.2 5.3-2.7 4.2-2.4 5.2-2.6 7.4-1.6 5.5 2.5 4.4 10.3-1.8 12.9q-5.6 2.3-2 3.8c.8.3 1.5 1.8 1.5 3.4s.4 3.2.9 3.7c1.6 1.8 2.2 6.3.9 6.7q-1.4.4.5 3.1c1.6 2.4 1.6 2.8.2 3.3-.8.3-1.5 1.4-1.5 2.3 0 1.3-.9 1.5-4.9 1.3-4.7-.4-5.2-.1-9.8 4.1l-4.8 4.6L106 90c-2-1.5-4.1-1.8-11.2-1.7-9 .1-13.8-1.5-8-2.6 3.3-.7 9.1-5.1 8-6.2-.3-.4-1.9.3-3.5 1.4-3.6 2.7-12 4.3-14.8 2.9-3.9-2-8.5-5.9-8.5-7.2q.2-1.4 2.5-2c3-.8 4.3-4.8 2.6-7.9-1-1.8-.7-3.6 1.3-9.6C77 49.3 81.5 42 83.5 42q1.3-.2 2.5-1.5t4-.9c1.5.4 3.1.1 3.4-.5.9-1.3 2.3-1.4 3-.2M141 40c-2 1.3-6.3 1.3-5.5 0 .3-.6 2.1-1 3.8-1q3.5 0 1.7 1m17.5 1.1q.8 1-3.2.3-7.6-1.4-1-1.4c2 0 3.9.5 4.2 1.1m12.4 4.5q.3.6-1.9.1c-1.4-.4-3.1-.7-3.7-.7q-1.2 0-1.3-.9c0-1 5.8.3 6.9 1.5M157 46c0 .5-1.9 1-4.2 1q-4.6 0-2.8-1c2-1.3 7-1.3 7 0m17.4 3.8c.3.5-.8.6-2.5.4s-2.9-.6-2.9-.8c0-.8 4.9-.4 5.4.4m-6.9 1.2q1.9.8.5.9c-.8 0-2.4-.4-3.5-.9q-1.9-.8-.5-.9c.8 0 2.4.4 3.5.9M143 52.5c-1.9.7-4.2 1.3-5 1.3q-1-.1 2-1.3c1.9-.7 4.2-1.3 5-1.3q1 .1-2 1.3m13.3 3.2c-.7.2-1.9.2-2.5 0q-1-.5 1.2-.5t1.3.5m15 3.5q2.8 2.8.7 1.2a32 32 0 0 0-4.5-3.2q-1.7-1-.7-1.2c.7 0 2.7 1.5 4.5 3.2M145.5 58q.4.9-.9.4-2.7-1.2-.7-1.4 1 0 1.6 1m-9.5 1.4c0 .9-3 1.4-3.5.6q-.4-1 1.4-1 2 0 2.1.4m25.2 3.5q1.6 2-.2.3a6 6 0 0 0-3.2-1.2q-1.7 0-1.8-.9c0-1.4 3.8-.1 5.2 1.8m8.3.9c-.3.3-1.6-.5-2.8-1.7l-2.2-2.3 2.8 1.7c1.5 1 2.5 2 2.2 2.3m-20.5-2c0 .5-1.3.7-3 .4s-3-.6-3-.8 1.4-.4 3-.4 3 .4 3 .8M138.5 66q.6 1-2.2.4-5.7-1.4-1-1.4c1.4 0 2.9.5 3.2 1m9.5 2c2.4.8 2.4.8-.7.9-1.7.1-3.5-.4-3.8-.9q-1-1.6 4.5 0m24 5.3q-.2.8-2-.8c-1.1-1-2-2.3-2-2.8q.2-.8 2 .8c1.1 1 2 2.3 2 2.8m12.5-.2c.8 1.5 1.5 5.1 1.5 7.8 0 4.2-.5 5.6-3.1 8.6a44 44 0 0 1-19.1 10c-2.1.4-3.8 1.1-3.8 1.6 0 1.2.8 1.1 7.1-.7a44 44 0 0 0 15.7-7.7c2.9-2.7 3.6-1.7 5.1 6.8q2 11.5.1 18.7c-1.8 6.3-10.9 9.7-38.5 14.4-8.2 1.3-21.7 4.1-30 6a174 174 0 0 1-45.7 7.1l-16.8.6v-7.9c0-4.4-.6-10.3-1.3-13.1-1.1-4.3-1.1-5.5 0-7.7 1.7-3.2 2-3.2 4.5-.1 2.6 3.3 6.5 3.3 8 0 .9-2 .8-2.8-.6-4.4-1-1-1.4-2.1-.9-2.3 3.2-1.8 4.5-1.6 7 1.2 1.4 1.7 3.2 3 3.9 3 1.7 0 9.2-3.9 10-5.1.3-.5 1.6-.9 3-.9s3.5-1 4.7-2.3 2.7-2.3 3.2-2.5l2.6-.7c.8-.3 4.8-4.1 8.9-8.6a52 52 0 0 1 9.6-8.9c1.6-.6 4.5-.2 10.1 1.7a51 51 0 0 0 28.9 1.8 42 42 0 0 0 18-9.8c2.7-3.2 3.2-5.9.9-5.1q-1.4.6-1.5-.4l-.6-2.5q-.7-1.6 2.3-1.9c4-.5 5.2.1 6.8 3.3m-20.9-1.6q1.6 1.3.9 1.4c-.5 0-1.9-.6-2.9-1.4q-1.7-1.4-1-1.5c.6 0 1.9.7 3 1.5m-15 3c1.7 1.3 1.6 1.4-1.3.4q-5.2-1.8-2-1.9c.7 0 2.2.7 3.3 1.5M137.5 77q.4.9-.4 1-1-.1-1.1-1 0-1 .4-1 .6 0 1.1 1m25.8-.3c-.7.2-1.9.2-2.5 0q-1-.5 1.2-.5t1.3.5m-20.9 2.8q1.8 1.3 1 1.5a7 7 0 0 1-2.8-1.5q-1.8-1.4-1-1.5a7 7 0 0 1 2.8 1.5M154 79q-.1.8-1.5.4-1.4-.7-1.5-1 .1-.4 1.5-.4t1.5 1m15 1q0 .9-.4 1-.6-.1-1.1-1-.4-1 .4-1 1 0 1.1 1m-6 2q1.3.8 1 1.4c-.3.2-1.4-.2-2.4-1-2.2-1.5-1-1.9 1.4-.4m-25.5 1.8q-.6.4-1.8-.7-1.4-1.4.6-.5 1.6.6 1.2 1.2m16.4.8c1 .9-3.5.3-4.9-.6q-1.7-1.2 1.5-.4c1.7.4 3.2.8 3.4 1m-78.2 1.8c2.6 1.3 6.8 3 9.3 3.6 3.9 1.1 4.2 1.3 2.7 2.5-4.2 3.1.8 12.9 5.4 10.5q1.9-1 1.9-.1-.2 1-2 2.1c-1.5.8-2.4.6-4-1q-2-2-6.4-2c-3.7 0-4.8-.5-6.8-3-2.3-2.9-2.3-2.9-6.3-1.5-7.5 2.6-9.7 1.8-11.5-4.5-.7-2.6-.7-3.1.5-2.6q1.6.6 1.5-1.9.1-4.8 3.4 0c1.9 2.9 3.6 3.3 3.6.8 0-1.4 2.6-5.3 3.6-5.3zm28.4 5.6q4 2.1-.8 6.5c-2.8 2.5-5.7 3.2-6.7 1.6-.3-.4-1.7-.6-3-.4-2 .4-2.8 0-3.8-2.2-1.1-2.5-1-2.9 1.1-4.6 2.6-2.1 9.9-2.6 13.2-.9m-45.8 11.9c4.7 5.2 6 7.8 4.6 8.7q-1.2.5-2.2-1.2c-.6-1-2.7-3.7-4.9-6a21 21 0 0 1-3.8-4.8c0-1.8 3.2-.1 6.3 3.3m16.2-.8c3.4 3 4.6 5.9 2.4 5.9-.6 0-3.1-1.6-5.5-3.7-3.3-2.6-4.1-3.8-3.2-4.4 2-1.3 2.5-1.1 6.3 2.2m-9.1 1c3.9 2.3 4.6 3.9 1.8 3.9-1.8 0-4-1.9-5.6-4.8-1-1.7-.3-1.5 3.8.9m20.3 1.4c3.8 1.6 3.6 2.3-.9 4.3-2.6 1.1-2.8 1-2.8-1.3q-.1-2.3-1.1-2.5-.8-.1-.4-1c.8-1.3.9-1.3 5.2.5m-30.5 2.9 2.7 3.4-2.5 2.3-2.6 2.4-2.1-3c-1.2-1.7-3.2-4-4.3-5.2-2.4-2.4-1.8-3.1 3.1-3.2 2.3-.1 3.7.7 5.7 3.3m-9.4 3.1c5 5.6 8.3 15.5 8.5 25.3.1 3.8-.1 7.4-.6 7.8-1 1.1-15.8-1.9-22.8-4.5s-13.6-7.3-15.1-10.6-.2-8.8 2.9-12.5c2.7-3.3 8.3-6.5 14.8-8.6s8-1.7 12.3 3.1M79 111q-.1.9-1.6 1-1.3-.1-.9-1 .6-1 1.6-1 .8 0 .9 1m-13 5.1q-.2.8-2 .9-1.8-.1-2-.8.2-.7 2-.9 1.8-.1 2 .8m123 10.6c-.1 8.3-3.4 13.8-7.6 12.8q-2-.4-4 1.6-1.7 2-5 1.7c-1.7-.1-3.9.4-4.8 1.1q-1.6 1.4-5.6.8t-5.1.9c-1.6 2-8.5 1.8-9.3-.2-.8-2.1-3.6-1.6-30.1 5.2a172 172 0 0 1-48.7 7.4 98 98 0 0 1-43.4-8.1q-12.6-5.8-12.4-14.5v-4.6l2.4 3c1.4 1.6 5.1 4.3 8.3 6 18.5 9.8 52.1 11.7 83 4.6 23.3-5.4 29.4-6.7 45.4-9.5 18.1-3.1 27.7-5.8 32.4-8.8 4-2.6 4.5-2.6 4.5.6\"/><path d=\"M122.9 48.1q-4.2 4.3 2.4 1c2-1 3.3-2.1 3-2.5-1.2-1.2-3.3-.6-5.4 1.5M75.6 59.8c-.3.6-.3 1.8 0 2.7.8 1.9 5.5 1.7 6.2-.4q.5-1.3-1.6-.7t-3-1-1.6-.6M94 65.4c0 1.6 3.7 4.6 5.6 4.6s6-3.7 5.1-4.6q-.8-.6-1.9.4c-1.7 1.7-5.8 1.5-6.4-.3-.8-1.9-2.4-2-2.4-.1\"/>";
+
+function dashboardHTML() {
+  // Mon 28 is today; the week runs Fri → Thu, as on the device.
+  const days = [['Th 6', 25, 0], ['Th 7', 26, .78], ['CN', 27, .64], ['Th 2', 28, 0, 'sel'], ['Th 3', 29, null], ['Th 4', 30, null], ['Th 5', 1, null]];
+  const C = 2 * Math.PI * 16.7;
+  const week = days.map(([w, n, p, sel]) => {
+    const ring = p == null ? '' : `<svg viewBox="0 0 36 36"><circle class="trk" cx="18" cy="18" r="16.7"/>${p > 0 ? `<circle class="arc" cx="18" cy="18" r="16.7" stroke-dasharray="${(p * C).toFixed(1)} ${C.toFixed(1)}"/>` : ''}</svg>`;
+    return `<div class="m-day${sel ? ' sel' : ''}${p == null ? ' future' : ''}"><span>${w}</span><div class="m-ring">${ring}<i>${n}</i></div></div>`;
+  }).join('');
+  const macros = [['ĐẠM', 'beef', '#D46A86', 1.5, 145], ['CARB', 'wheat', '#E09C84', 1.5, 169], ['CHẤT BÉO', 'droplet', '#E8C55C', 2, 75]];
+  const col = i => 12 + 123 * i;
+  return `
+  <div class="m-app" aria-hidden="true">
+    <svg class="m-wm" viewBox="0 0 2180 812"><path d="${DATA.full}"/></svg>
+    <div class="m-avatar"></div>
+    <div class="m-week">${week}</div>
+    <div class="m-h" style="top:193px">Hôm nay</div>
+    <svg class="m-dials" viewBox="0 0 393 852">
+      ${dialArc(196.5, 329, 91, 26)}
+      ${[0, 1, 2].map(i => dialArc(col(i) + 61.5, 485.3, 38.5, 11)).join('')}
+    </svg>
+    <div class="m-center m-kcal">1.932</div>
+    <div class="m-center m-muted" style="top:371px;font-size:17px">kcal còn lại</div>
+    <div class="m-center m-muted" style="top:392px;font-size:14px">đã ghi 0/1.932</div>
+    ${macros.map(([label, icon, color, stroke, target], i) => `
+      <div class="m-mlabel" style="left:${col(i)}px"><svg viewBox="0 0 24 24" style="stroke:${color};stroke-width:${stroke}">${MACRO_ICON[icon]}</svg>${label}</div>
+      <div class="m-mval" style="left:${col(i)}px;top:476px;font-size:21px">0g</div>
+      <div class="m-mval m-muted" style="left:${col(i)}px;top:498px;font-size:14px">/${target}g</div>`).join('')}
+    <div class="m-h" style="top:538px">Bữa ăn gần đây</div>
+    <div class="m-h-meta" style="top:538px">Đã ghi 0</div>
+    <div class="m-card m-empty">
+      <svg viewBox="0 0 201 169">${HEDGEHOG}</svg>
+      <div class="t">Chưa ghi nhận bữa ăn nào hôm nay</div>
+      <div class="s">Những bữa ăn sẽ hiển thị ở đây</div>
+    </div>
+    <div class="m-card m-weight"><b>61.5</b><span>kg&nbsp;&nbsp;↓ 1.0</span></div>
+    <nav class="m-nav">
+      <span style="left:37.3px">${svgIcon(ICON.house, 'on')}</span>
+      <span style="left:108px">${svgIcon(ICON.pen)}</span>
+      <div class="m-plus">${svgIcon(ICON.plus)}</div>
+      <span style="left:243.5px">${svgIcon(ICON.apple)}</span>
+      <span style="left:314.2px">${svgIcon(ICON.users)}</span>
+    </nav>
+  </div>`;
+}
+
+let uidSeq = 0;
+class Screen {
+  constructor(host) {
+    const uid = `s${uidSeq++}`;
+    host.innerHTML = `
+      <div class="screen">
+        ${dashboardHTML()}
+        <svg class="c-svg" viewBox="0 0 ${W} ${H}" aria-hidden="true">
+          <defs>
+            <mask id="${uid}-hole" maskUnits="userSpaceOnUse" x="-2" y="-2" width="${W + 4}" height="${H + 4}">
+              <rect x="-2" y="-2" width="${W + 4}" height="${H + 4}" fill="#fff"/>
+              <path class="c-hole" d="${DATA.counter}" fill="#000" fill-opacity="0"/>
+            </mask>
+            <clipPath id="${uid}-slot"><rect class="c-slot" x="-2" y="-2" width="${W + 4}" height="${H + 4}"/></clipPath>
+            <linearGradient id="${uid}-sheen" class="c-sheen" gradientUnits="userSpaceOnUse" x1="-99999" y1="0" x2="-99000" y2="0">
+              <stop offset="0" stop-color="#141413"/><stop offset=".5" stop-color="#8C8A82"/><stop offset="1" stop-color="#141413"/>
+            </linearGradient>
+          </defs>
+          <rect class="c-bg" x="-2" y="-2" width="${W + 4}" height="${H + 4}" fill="#F8F7F4" mask="url(#${uid}-hole)"/>
+          <g class="c-glyphs" fill="url(#${uid}-sheen)" clip-path="url(#${uid}-slot)">
+            ${ORDER.map(id => `<path data-id="${id}" d="${DATA.glyphs[id]}"/>`).join('')}
+            <path class="c-ghost" d="${DATA.glyphs.K}" opacity="0"/>
+          </g>
+        </svg>
+        <div class="sb"><span class="sb-time">9:41</span>
+          <span class="sb-icons">
+            <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0zM3.3 6.8a6.6 6.6 0 0 1 9.4 0l-1.5 1.5a4.5 4.5 0 0 0-6.4 0zM1 4.5a9.9 9.9 0 0 1 14 0l-1.5 1.5a7.8 7.8 0 0 0-11 0z"/></svg>
+            <svg width="27" height="13" viewBox="0 0 27 13"><rect x=".5" y=".5" width="23" height="12" rx="3.5" fill="none" stroke="#141413" opacity=".4"/><rect x="2" y="2" width="17" height="9" rx="2"/><path d="M25 4.5v4a2 2 0 0 0 0-4z" opacity=".4"/></svg>
+          </span>
+        </div>
+        <div class="island"></div>
+        <div class="homebar"></div>
+      </div>`;
+    this.bg = host.querySelector('.c-bg');
+    this.hole = host.querySelector('.c-hole');
+    this.group = host.querySelector('.c-glyphs');
+    this.sheen = host.querySelector('.c-sheen');
+    this.ghost = host.querySelector('.c-ghost');
+    this.slot = host.querySelector('.c-slot');
+    this.glyphs = Object.fromEntries(ORDER.map(id => [id, host.querySelector(`[data-id="${id}"]`)]));
+    this.wm = host.querySelector('.m-wm');
+  }
+
+  render(t, opts) {
+    const dir = DIRS[opts.dir], exit = EXITS[opts.exit];
+    const tt = Math.max(t, 0); // before Flutter's first frame the K is the native one, frozen
+    const intro = opts.reduce ? 600 : dir.end;
+    const exitStart = Math.max(intro, opts.readyAt);
+    const u = tt - exitStart;
+    const st = { ax: CX, ay: CY, ux: U.x, uy: U.y, s: S0 };
+    const fx = { glyphAlpha: 1, curtainAlpha: 1, hole: 0, landed: false, oPaper: 0, oAlpha: null };
+    if (u >= 0) {
+      if (opts.reduce) {
+        fx.glyphAlpha = 1 - inOutCubic(seg(u, 0, 280));
+        fx.curtainAlpha = 1 - inOutCubic(seg(u, 60, 300));
+      } else {
+        exit.apply(u, st, fx);
+      }
+    }
+    // Idle only fills a wait, and bleeds out over the first 180 ms of the reveal.
+    const waiting = opts.readyAt > intro && !opts.reduce;
+    const idleTau = tt - intro - 120;
+    const idleGain = waiting && idleTau > 0 ? 1 - outCubic(seg(u, 0, 180)) : 0;
+
+    const tf = (id, p) => {
+      const piv = kind => kind === 'bottom' ? [(BOX[id][0] + BOX[id][2]) / 2, BASE] : kind === 'left' ? [BOX[id][0], BASE] : [(BOX[id][0] + BOX[id][2]) / 2, (BOX[id][1] + BOX[id][3]) / 2];
+      const [rx, ry] = piv(p.rp), [qx, qy] = piv(p.sp);
+      const deg = r => (r * 180) / Math.PI;
+      return `translate(${st.ax} ${st.ay}) scale(${st.s}) translate(${p.x - st.ux} ${p.y - st.uy}) `
+        + `rotate(${deg(p.rot)} ${rx} ${ry}) `
+        + `translate(${qx} ${qy}) skewX(${deg(Math.atan(p.skew))}) scale(${p.sx * Math.cos(p.spin)} ${p.sy}) translate(${-qx} ${-qy})`;
+    };
+
+    for (const id of ORDER) {
+      let p;
+      // The o can outlive the other letters (the portal turns it into paper).
+      let alpha = id === 'o' && fx.oAlpha != null ? fx.oAlpha : fx.glyphAlpha;
+      if (opts.reduce) {
+        p = rest();
+        alpha *= seg(tt, HOLD, 320);
+      } else {
+        p = dir.pose(id, tt);
+        if (dir.skewGain) {
+          const v = (p.x - dir.pose(id, tt - 8).x) / 8; // units per ms
+          p.skew += clamp(-dir.skewGain * v, -0.22, 0.22);
+        }
+        if (idleGain > 0) {
+          const o = idleOffset(dir.idleKind, id, idleTau);
+          p.x += o.x * idleGain; p.y += o.y * idleGain; p.spin += o.spin * idleGain;
+          p.sx *= 1 + (o.sx - 1) * idleGain; p.sy *= 1 + (o.sy - 1) * idleGain;
+          if (o.sp !== 'bottom') p.sp = o.sp;
+        }
+      }
+      this.glyphs[id].setAttribute('opacity', alpha);
+      this.glyphs[id].setAttribute('transform', tf(id, p));
+      if (id === 'o') this.hole.setAttribute('transform', tf('o', p));
+    }
+    if (opts.reduce) {
+      const g = rest(); g.x = K_START_X;
+      this.ghost.setAttribute('transform', tf('K', g));
+      this.ghost.setAttribute('opacity', 1 - seg(tt, HOLD, 320));
+    } else {
+      this.ghost.setAttribute('opacity', 0);
+    }
+    const band = waiting && idleTau > 0 && u < 0 ? sheenAt(dir.idleKind, idleTau) : null;
+    this.sheen.setAttribute('x1', band == null ? -99999 : band - 380);
+    this.sheen.setAttribute('x2', band == null ? -99000 : band + 380);
+    this.sheen.setAttribute('y2', band == null ? 0 : 160);
+    // Rise: nothing shows below the slot line while the letters come up through it.
+    const slotY = dir.slot && !opts.reduce && tt < dir.end ? st.ay + (SLOT - st.uy) * st.s : H + 2;
+    this.slot.setAttribute('height', slotY + 2);
+    if (fx.oPaper > 0) this.glyphs.o.setAttribute('fill', mix('#141413', '#F8F7F4', fx.oPaper));
+    else this.glyphs.o.removeAttribute('fill');
+    this.bg.setAttribute('opacity', fx.curtainAlpha);
+    this.hole.setAttribute('fill-opacity', fx.hole);
+    // The real masthead wordmark hides while the flying one is on its way in.
+    this.wm.style.opacity = opts.exit === 'header' && !opts.reduce && !fx.landed ? 0 : 1;
+    const done = u >= (opts.reduce ? 360 : exit.dur);
+    this.group.style.display = done ? 'none' : '';
+    this.bg.style.display = done ? 'none' : '';
+    return { intro, exitStart, end: exitStart + (opts.reduce ? 360 : exit.dur) };
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Page wiring
+ * ------------------------------------------------------------------ */
+const state = { dir: RECOMMENDED, exit: RECOMMENDED_EXIT, load: 'fast', speed: 1, reduce: false, playing: true, t: -NATIVE, last: null };
+const opts = () => ({ dir: state.dir, exit: state.exit, readyAt: LOADS[state.load].readyAt, reduce: state.reduce });
+const reducedPref = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function radioGroup(el, entries, key, onPick, label = e => e.name) {
+  el.innerHTML = '';
+  for (const [value, entry] of entries) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = el.id === 'dirs' ? `dir${value === RECOMMENDED ? ' is-pick' : ''}` : 'chip';
+    b.setAttribute('role', 'radio'); b.dataset.value = value;
+    b.innerHTML = label(entry, value);
+    b.addEventListener('click', () => { onPick(value); sync(); });
+    el.appendChild(b);
+  }
+  el.addEventListener('keydown', e => {
+    if (!['ArrowRight', 'ArrowDown', 'ArrowLeft', 'ArrowUp'].includes(e.key)) return;
+    const items = [...el.children], i = items.findIndex(x => x.getAttribute('aria-checked') === 'true');
+    const next = items[(i + (e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : items.length - 1)) % items.length];
+    next.click(); next.focus(); e.preventDefault();
+  });
+}
+
+let screen, lastInfo = null;
+function restart() { state.t = -NATIVE; state.last = null; state.playing = true; }
+function sync() {
+  for (const [el, key] of [[dirsEl, 'dir'], [exitsEl, 'exit'], [loadsEl, 'load'], [speedsEl, 'speed']]) {
+    for (const b of el.children) {
+      const on = String(state[key]) === b.dataset.value;
+      b.setAttribute('aria-checked', on); b.tabIndex = on ? 0 : -1;
+    }
+  }
+  reduceEl.setAttribute('aria-checked', state.reduce);
+  const n = NOTES[state.dir], ex = EXITS[state.exit], d = DIRS[state.dir];
+  notesEl.innerHTML = `
+    <div class="notes-head"><h3 class="notes-title">${n.title}</h3>
+      <span class="muted">${state.dir === RECOMMENDED ? 'Your pick, now in the app. ' : ''}The letters move for ${((d.end - HOLD) / 1000).toFixed(1)} s. Times count from Flutter's first frame.</span></div>
+    <dl class="beats" aria-label="Beats, timed from Flutter's first frame">${n.beats.map(([t, s]) => `<dt>${t} s</dt><dd>${s}</dd>`).join('')}</dl>
+    <div class="facts">
+      <div><b>While the app is still loading</b>${n.idle}</div>
+      <div><b>Feel</b>${n.feel}</div>
+      <div><b>${ex.name}</b>${ex.note}</div>
+    </div>`;
+  restart();
+}
+
+function tick(now) {
+  if (state.playing) {
+    if (state.last != null) state.t += (now - state.last) * state.speed;
+    state.last = now;
+  } else {
+    state.last = null;
+  }
+  lastInfo = screen.render(state.t, opts());
+  const loopEnd = lastInfo.end + 1100;
+  if (state.playing && state.t > loopEnd) restart();
+  scrubEl.max = Math.ceil(loopEnd);
+  scrubEl.value = Math.round(state.t);
+  clockEl.textContent = state.t < 0 ? 'before Flutter' : `${(state.t / 1000).toFixed(2)} s`;
+  phaseEl.textContent = phaseName(state.t, lastInfo);
+  requestAnimationFrame(tick);
+}
+function phaseName(t, info) {
+  if (t < 0) return 'iOS launch screen';
+  if (t < HOLD) return 'Flutter takes over, same frame';
+  if (t < info.intro) return 'Intro';
+  if (t < info.exitStart) return 'Waiting for the app';
+  if (t < info.end) return 'Reveal';
+  return 'Dashboard';
+}
+
+const playIcon = '<svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg>';
+const pauseIcon = '<svg viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></svg>';
+function setPlaying(on) {
+  state.playing = on;
+  playEl.innerHTML = on ? pauseIcon : playIcon;
+  playEl.setAttribute('aria-label', on ? 'Pause' : 'Play');
+}
+
+function fitPhone() {
+  const slot = document.getElementById('slot');
+  const col = slot.parentElement.getBoundingClientRect().width;
+  const narrow = window.innerWidth <= 880;
+  const byWidth = Math.min(col, 380) / 407;
+  // Desktop: the phone and its transport fit the viewport. Phone: leave room to see the picker above it.
+  const byHeight = (window.innerHeight - (narrow ? 230 : 190)) / 866;
+  const k = clamp(Math.min(byWidth, byHeight), 0.5, 0.86);
+  document.documentElement.style.setProperty('--k', k.toFixed(3));
+}
+
+const dirsEl = document.getElementById('dirs'), exitsEl = document.getElementById('exits');
+const loadsEl = document.getElementById('loads'), speedsEl = document.getElementById('speeds');
+const notesEl = document.getElementById('notes'), reduceEl = document.getElementById('reduce');
+const scrubEl = document.getElementById('scrub'), clockEl = document.getElementById('clock');
+const phaseEl = document.getElementById('phase'), playEl = document.getElementById('play');
+
+function sheetMode() {
+  // Review aid: #sheet-<direction>-<exit>[-slow][-reduce][-band] renders a contact sheet of frames.
+  const [, dir = 'clack', exit = 'header', ...flags] = location.hash.slice(1).split('-');
+  const band = flags.includes('band');
+  document.body.innerHTML = `<div class="sheet${band ? ' band' : ''}" id="sheet"></div>`;
+  const host = document.getElementById('sheet');
+  const o = { dir, exit, readyAt: flags.includes('slow') ? 3000 : 300, reduce: flags.includes('reduce') };
+  const intro = o.reduce ? 600 : DIRS[dir].end;
+  const end = Math.max(intro, o.readyAt) + EXITS[exit].dur;
+  const from = Number((flags.find(f => f.startsWith('from')) || 'from0').slice(4));
+  const to = Number((flags.find(f => f.startsWith('to')) || `to${end}`).slice(2));
+  const n = band ? 30 : 16, step = (to - from) / (n - 1);
+  for (let i = 0; i < n; i++) {
+    const t = Math.round(from + i * step);
+    const fig = document.createElement('figure');
+    fig.innerHTML = `<div class="mini"></div><figcaption>${(t / 1000).toFixed(2)} s</figcaption>`;
+    host.appendChild(fig);
+    new Screen(fig.querySelector('.mini')).render(t, o);
+  }
+}
+
+if (location.hash.startsWith('#sheet')) {
+  sheetMode();
+} else {
+  radioGroup(dirsEl, Object.entries(DIRS), 'dir', v => { state.dir = v; },
+    (d, v) => `<span class="dir-top"><span class="dir-name">${d.name}</span>${v === RECOMMENDED ? '<span class="tag">Your pick</span>' : ''}</span><span class="dir-line">${d.line}</span>`);
+  radioGroup(exitsEl, Object.entries(EXITS), 'exit', v => { state.exit = v; }, (e, v) => e.name + (v === RECOMMENDED_EXIT ? ' <span class="muted">· your pick</span>' : ''));
+  radioGroup(loadsEl, Object.entries(LOADS), 'load', v => { state.load = v; });
+  radioGroup(speedsEl, Object.entries(SPEEDS), 'speed', v => { state.speed = Number(v); });
+  reduceEl.addEventListener('click', () => { state.reduce = !state.reduce; sync(); });
+  if (reducedPref.matches) state.reduce = true;
+  screen = new Screen(document.getElementById('phone'));
+  document.getElementById('phone').addEventListener('click', () => { restart(); setPlaying(true); });
+  document.getElementById('replay').addEventListener('click', () => { restart(); setPlaying(true); });
+  playEl.addEventListener('click', () => setPlaying(!state.playing));
+  scrubEl.addEventListener('input', () => { setPlaying(false); state.t = Number(scrubEl.value); });
+  window.addEventListener('resize', fitPhone);
+  fitPhone();
+  setPlaying(true);
+  sync();
+  requestAnimationFrame(tick);
+}
+</script>
+
+</body></html>

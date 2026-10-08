@@ -1,0 +1,35 @@
+{
+  "_comment": "Cue sheet for the template's example film (14.6 s). Scene starts mirror timeline(SCENES) in src/film/Film.tsx; event times inside a scene mirror that scene's code. Sound names are from sfx_catalog.md; fetch them first (fetch_sfx.md). Music is optional: set music, music_hit_at (the hit's time in the track) and hit_lands_at (the film time it should land on, here the wordmark).",
+  "duration": 14.6,
+  "sfx_dir": "lib/sfx",
+  "out": "../../templates/remotion-starter/public/audio/mix.wav",
+  "scenes": { "title": 0.0, "demo": 2.5, "lift": 9.6, "end": 12.2 },
+  "music": "lib/music/track.mp3",
+  "music_hit_at": 32.0,
+  "hit_lands_at": 12.7,
+  "music_db": -6,
+  "peak_db": -1,
+  "events": [
+    { "scene": "title", "t": 0.1, "sound": "keyboard_2_laptop_keyboard.wav", "db": -16, "dur": 0.45, "offset": 0.6, "trim": false },
+    { "scene": "title", "t": 0.58, "sound": "whoosh_short_3_swoosh_015.mp3", "db": -15 },
+    { "scene": "title", "t": 1.95, "sound": "whoosh_short_2_fast_sweep.wav", "db": -16 },
+
+    { "scene": "demo", "t": 0.9, "sound": "click_ui_3_modern_click_box_check.wav", "db": -8 },
+    { "scene": "demo", "t": 1.2, "sound": "keyboard_1_smartphone_typing.wav", "db": -13, "dur": 1.45, "offset": 0.3, "trim": false },
+    { "scene": "demo", "t": 3.0, "sound": "click_ui_3_modern_click_box_check.wav", "db": -7 },
+    { "scene": "demo", "t": 3.03, "sound": "pop_2_clean_minimal_pop.mp3", "db": -9 },
+    { "scene": "demo", "t": 3.3, "sound": "whoosh_short_1_fast_whoosh.wav", "db": -15 },
+    { "scene": "demo", "t": 3.88, "sound": "pop_3_dry_pop_up.wav", "db": -15, "pan": -0.15 },
+    { "scene": "demo", "t": 4.38, "sound": "pop_3_dry_pop_up.wav", "db": -16, "pan": 0.15 },
+    { "scene": "demo", "t": 4.88, "sound": "pop_3_dry_pop_up.wav", "db": -17, "pan": -0.1 },
+    { "scene": "demo", "t": 5.6, "sound": "whoosh_long_1_air_woosh.wav", "db": -17 },
+    { "scene": "demo", "t": 6.5, "sound": "notify_1_soft_notification.mp3", "db": -10 },
+
+    { "scene": "lift", "t": 0.15, "sound": "whoosh_long_2_cinematic_swoosh.wav", "db": -12 },
+    { "scene": "lift", "t": 1.6, "sound": "click_ui_3_modern_click_box_check.wav", "db": -8 },
+    { "scene": "lift", "t": 1.62, "sound": "heart_like_2_click_melodic_tone.wav", "db": -11 },
+
+    { "scene": "end", "t": 0.5, "sound": "impact_2_sub_bass_boom.mp3", "db": -7 },
+    { "scene": "end", "t": 0.75, "sound": "pop_1_pop.mp3", "db": -13 }
+  ]
+}

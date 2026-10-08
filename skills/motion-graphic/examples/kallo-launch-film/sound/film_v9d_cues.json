@@ -1,0 +1,1064 @@
+{
+ "_comment": "Film v9d (83.1 s), ported event for event from the production mix script. Times are scene-local: film time = scenes[scene] + t. Sounds are sfx_catalog.md names; fetch them yourself, no audio ships here. The music is the owner's pick (Pixabay \"Your Pulse\"); bring your own track and set music_hit_at to its downbeat.",
+ "duration": 83.1,
+ "sfx_dir": "lib/sfx",
+ "out": "mix_film_v9d.wav",
+ "scenes": {
+  "opening": 0.0,
+  "barcode_txt": 21.35,
+  "barcode": 22.8,
+  "label_txt": 25.8,
+  "label": 27.25,
+  "web": 32.05,
+  "believe": 45.05,
+  "circle": 48.1,
+  "relog_txt": 54.6,
+  "relog": 56.15,
+  "share_txt": 61.0,
+  "pizza": 62.5,
+  "micro": 75.3,
+  "end": 79.1
+ },
+ "music": "lib/music/film_track.mp3",
+ "music_hit_at": 0.62,
+ "hit_lands_at": 0.62,
+ "_music": "Measured on the production raw mix by cross-correlation with the track (normalised correlation 0.96): the track starts at film 0, so its 0.62 s lands on the name at 0.62 s.",
+ "music_db": -6,
+ "music_fade_in": 0.2,
+ "music_fade_out": 2.2,
+ "music_fade_power": 1.5,
+ "loudness": {
+  "I": -16,
+  "TP": -1.5,
+  "LRA": 11
+ },
+ "events": [
+  {
+   "scene": "opening",
+   "t": 0.08,
+   "sound": "keyboard_1_smartphone_typing.wav",
+   "db": -16.0,
+   "dur": 0.45,
+   "offset": 0.3,
+   "trim": false,
+   "fade": 0.08,
+   "note": "\"Introducing\" types on"
+  },
+  {
+   "scene": "opening",
+   "t": 0.62,
+   "sound": "impact_1_sub_drop_short.mp3",
+   "db": -8.0,
+   "note": "the product name lands (the music downbeat lands here too)"
+  },
+  {
+   "scene": "opening",
+   "t": 1.75,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -15.0,
+   "note": "the title lifts away"
+  },
+  {
+   "scene": "opening",
+   "t": 3.7,
+   "sound": "swipe_2_quick_swipe.mp3",
+   "db": -13.0,
+   "note": "the first move into the demo"
+  },
+  {
+   "scene": "opening",
+   "t": 3.75,
+   "sound": "keyboard_1_smartphone_typing.wav",
+   "db": -13.0,
+   "dur": 1.5,
+   "offset": 0.3,
+   "trim": false,
+   "fade": 0.08,
+   "note": "the careless one-line message, letter by letter"
+  },
+  {
+   "scene": "opening",
+   "t": 5.7,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Send"
+  },
+  {
+   "scene": "opening",
+   "t": 5.73,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -9.0,
+   "note": "the message leaves (0.03 s after the tap)"
+  },
+  {
+   "scene": "opening",
+   "t": 5.8,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -14.0,
+   "note": "the camera follows the message up"
+  },
+  {
+   "scene": "opening",
+   "t": 7.31,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -17.0,
+   "note": "result row 1 lands"
+  },
+  {
+   "scene": "opening",
+   "t": 7.89,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -17.0,
+   "note": "result row 2 lands"
+  },
+  {
+   "scene": "opening",
+   "t": 8.31,
+   "sound": "pop_1_pop.mp3",
+   "db": -11.0,
+   "note": "the card closes on its total"
+  },
+  {
+   "scene": "opening",
+   "t": 9.55,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -15.0,
+   "note": "a text line arrives"
+  },
+  {
+   "scene": "opening",
+   "t": 11.25,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -15.0,
+   "note": "back to the result"
+  },
+  {
+   "scene": "opening",
+   "t": 12.2,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -16.0,
+   "note": "down into the input"
+  },
+  {
+   "scene": "opening",
+   "t": 13.05,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -16.0,
+   "note": "the words that matter are selected"
+  },
+  {
+   "scene": "opening",
+   "t": 13.8,
+   "sound": "keyboard_1_smartphone_typing.wav",
+   "db": -13.0,
+   "dur": 3.0,
+   "offset": 0.3,
+   "trim": false,
+   "fade": 0.08,
+   "note": "the detailed rewrite, letter by letter"
+  },
+  {
+   "scene": "opening",
+   "t": 16.85,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Send"
+  },
+  {
+   "scene": "opening",
+   "t": 16.88,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -9.0,
+   "note": "the message leaves"
+  },
+  {
+   "scene": "opening",
+   "t": 16.95,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -15.0,
+   "note": "the message docks"
+  },
+  {
+   "scene": "opening",
+   "t": 18.25,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -17.0,
+   "note": "detailed row 1 lands"
+  },
+  {
+   "scene": "opening",
+   "t": 18.62,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -17.0,
+   "note": "detailed row 2 lands"
+  },
+  {
+   "scene": "opening",
+   "t": 18.95,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -14.0,
+   "note": "the two cards part for the comparison"
+  },
+  {
+   "scene": "opening",
+   "t": 19.85,
+   "sound": "notify_2_success_software_tone.wav",
+   "db": -12.0,
+   "note": "+245 kcal resolves"
+  },
+  {
+   "scene": "opening",
+   "t": 19.9,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -21.0,
+   "note": "word 1 of 5 lights up (each tick 1 dB louder)"
+  },
+  {
+   "scene": "opening",
+   "t": 20.04,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -20.0,
+   "note": "word 2 of 5 lights up (each tick 1 dB louder)"
+  },
+  {
+   "scene": "opening",
+   "t": 20.18,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -19.0,
+   "note": "word 3 of 5 lights up (each tick 1 dB louder)"
+  },
+  {
+   "scene": "opening",
+   "t": 20.32,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -18.0,
+   "note": "word 4 of 5 lights up (each tick 1 dB louder)"
+  },
+  {
+   "scene": "opening",
+   "t": 20.46,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -17.0,
+   "note": "word 5 of 5 lights up (each tick 1 dB louder)"
+  },
+  {
+   "scene": "barcode_txt",
+   "t": 0.0,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -14.0,
+   "note": "the barcode line arrives"
+  },
+  {
+   "scene": "barcode",
+   "t": 0.05,
+   "sound": "swipe_1_movement_swipe_whoosh.mp3",
+   "db": -17.0,
+   "note": "the phone is brought to the barcode"
+  },
+  {
+   "scene": "barcode",
+   "t": 1.32,
+   "sound": "heart_like_2_click_melodic_tone.wav",
+   "db": -12.0,
+   "note": "barcode found"
+  },
+  {
+   "scene": "barcode",
+   "t": 1.55,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -13.0,
+   "note": "cut to the result sheet"
+  },
+  {
+   "scene": "barcode",
+   "t": 1.85,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -16.0,
+   "note": "the product card lands"
+  },
+  {
+   "scene": "label_txt",
+   "t": 0.0,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -15.0,
+   "note": "the label line arrives"
+  },
+  {
+   "scene": "label",
+   "t": 0.25,
+   "sound": "swipe_1_movement_swipe_whoosh.mp3",
+   "db": -18.0,
+   "note": "the camera settles on the label"
+  },
+  {
+   "scene": "label",
+   "t": 1.85,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "the shutter button"
+  },
+  {
+   "scene": "label",
+   "t": 1.9,
+   "sound": "click_mouse_2_clear_mouse_clicks.wav",
+   "db": -10.0,
+   "note": "the photo is taken"
+  },
+  {
+   "scene": "label",
+   "t": 2.95,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -13.0,
+   "note": "the reading appears"
+  },
+  {
+   "scene": "label",
+   "t": 3.2,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -16.0,
+   "note": "the nutrition card lands"
+  },
+  {
+   "scene": "label",
+   "t": 4.15,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Add meal"
+  },
+  {
+   "scene": "label",
+   "t": 4.3,
+   "sound": "notify_1_soft_notification.mp3",
+   "db": -11.0,
+   "note": "saved (0.15 s after the tap)"
+  },
+  {
+   "scene": "web",
+   "t": 0.0,
+   "sound": "whoosh_long_2_cinematic_swoosh.wav",
+   "db": -10.0,
+   "pan": 0.15,
+   "note": "the phone morphs into the browser window"
+  },
+  {
+   "scene": "web",
+   "t": 1.0,
+   "sound": "keyboard_2_laptop_keyboard.wav",
+   "db": -15.0,
+   "dur": 2.9,
+   "offset": 0.6,
+   "trim": false,
+   "fade": 0.08,
+   "note": "web typing, letter by letter"
+  },
+  {
+   "scene": "web",
+   "t": 4.42,
+   "sound": "click_mouse_1_mouse_click_close.wav",
+   "db": -8.0,
+   "note": "Send (a mouse click: the pointer is on a desktop page)"
+  },
+  {
+   "scene": "web",
+   "t": 6.17,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -17.0,
+   "note": "row 1 lands (1 dB louder and panned further right each row)"
+  },
+  {
+   "scene": "web",
+   "t": 7.62,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -16.0,
+   "pan": 0.1,
+   "note": "row 2 lands (1 dB louder and panned further right each row)"
+  },
+  {
+   "scene": "web",
+   "t": 8.97,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -15.0,
+   "pan": 0.2,
+   "note": "row 3 lands (1 dB louder and panned further right each row)"
+  },
+  {
+   "scene": "web",
+   "t": 9.05,
+   "sound": "pop_1_pop.mp3",
+   "db": -12.0,
+   "note": "the card closes on its total"
+  },
+  {
+   "scene": "web",
+   "t": 10.38,
+   "sound": "click_mouse_1_mouse_click_close.wav",
+   "db": -8.0,
+   "note": "Save meal"
+  },
+  {
+   "scene": "web",
+   "t": 10.5,
+   "sound": "notify_1_soft_notification.mp3",
+   "db": -10.0,
+   "note": "saved"
+  },
+  {
+   "scene": "web",
+   "t": 10.45,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -16.0,
+   "note": "the camera rises to the gauge"
+  },
+  {
+   "scene": "web",
+   "t": 10.7,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -22.0,
+   "note": "gauge tick 1 of 4, 0.14 s apart, rising 1 dB each"
+  },
+  {
+   "scene": "web",
+   "t": 10.84,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -21.0,
+   "note": "gauge tick 2 of 4, 0.14 s apart, rising 1 dB each"
+  },
+  {
+   "scene": "web",
+   "t": 10.98,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -20.0,
+   "note": "gauge tick 3 of 4, 0.14 s apart, rising 1 dB each"
+  },
+  {
+   "scene": "web",
+   "t": 11.12,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -19.0,
+   "note": "gauge tick 4 of 4, 0.14 s apart, rising 1 dB each"
+  },
+  {
+   "scene": "web",
+   "t": 12.05,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -16.0,
+   "note": "out onto the logging feed"
+  },
+  {
+   "scene": "believe",
+   "t": 0.68,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -17.0,
+   "note": "belief line 1 leaves for the next"
+  },
+  {
+   "scene": "believe",
+   "t": 1.42,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -17.0,
+   "note": "belief line 2 leaves for the next"
+  },
+  {
+   "scene": "believe",
+   "t": 2.16,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -17.0,
+   "note": "belief line 3 leaves for the next"
+  },
+  {
+   "scene": "believe",
+   "t": 2.2,
+   "sound": "impact_3_futuristic_bass_hit.wav",
+   "db": -16.0,
+   "note": "the last belief line lands"
+  },
+  {
+   "scene": "circle",
+   "t": 0.05,
+   "sound": "pop_1_pop.mp3",
+   "db": -15.0,
+   "pan": -0.4,
+   "note": "avatar 1 of 6 appears (0.07 s apart, panned left to right)"
+  },
+  {
+   "scene": "circle",
+   "t": 0.12,
+   "sound": "pop_1_pop.mp3",
+   "db": -15.0,
+   "pan": -0.24,
+   "note": "avatar 2 of 6 appears (0.07 s apart, panned left to right)"
+  },
+  {
+   "scene": "circle",
+   "t": 0.19,
+   "sound": "pop_1_pop.mp3",
+   "db": -15.0,
+   "pan": -0.08,
+   "note": "avatar 3 of 6 appears (0.07 s apart, panned left to right)"
+  },
+  {
+   "scene": "circle",
+   "t": 0.26,
+   "sound": "pop_1_pop.mp3",
+   "db": -15.0,
+   "pan": 0.08,
+   "note": "avatar 4 of 6 appears (0.07 s apart, panned left to right)"
+  },
+  {
+   "scene": "circle",
+   "t": 0.33,
+   "sound": "pop_1_pop.mp3",
+   "db": -15.0,
+   "pan": 0.24,
+   "note": "avatar 5 of 6 appears (0.07 s apart, panned left to right)"
+  },
+  {
+   "scene": "circle",
+   "t": 0.4,
+   "sound": "pop_1_pop.mp3",
+   "db": -15.0,
+   "pan": 0.4,
+   "note": "avatar 6 of 6 appears (0.07 s apart, panned left to right)"
+  },
+  {
+   "scene": "circle",
+   "t": 0.65,
+   "sound": "whoosh_long_1_air_woosh.wav",
+   "db": -13.0,
+   "note": "the ring gathers and the phone rises in"
+  },
+  {
+   "scene": "circle",
+   "t": 1.15,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -10.0,
+   "pan": -0.3,
+   "note": "friend 1 docks into their post (on the arrival time)"
+  },
+  {
+   "scene": "circle",
+   "t": 1.3,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -10.0,
+   "pan": -0.18,
+   "note": "friend 2 docks into their post (on the arrival time)"
+  },
+  {
+   "scene": "circle",
+   "t": 1.55,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -10.0,
+   "pan": -0.06,
+   "note": "friend 3 docks into their post (on the arrival time)"
+  },
+  {
+   "scene": "circle",
+   "t": 1.8,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -10.0,
+   "pan": 0.06,
+   "note": "friend 4 docks into their post (on the arrival time)"
+  },
+  {
+   "scene": "circle",
+   "t": 2.05,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -10.0,
+   "pan": 0.18,
+   "note": "friend 5 docks into their post (on the arrival time)"
+  },
+  {
+   "scene": "circle",
+   "t": 2.3,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -10.0,
+   "pan": 0.3,
+   "note": "friend 6 docks into their post (on the arrival time)"
+  },
+  {
+   "scene": "circle",
+   "t": 2.95,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "the like"
+  },
+  {
+   "scene": "circle",
+   "t": 2.97,
+   "sound": "heart_like_2_click_melodic_tone.wav",
+   "db": -9.0,
+   "note": "the like lands"
+  },
+  {
+   "scene": "circle",
+   "t": 3.88,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "group tab 1"
+  },
+  {
+   "scene": "circle",
+   "t": 3.91,
+   "sound": "swipe_2_quick_swipe.mp3",
+   "db": -18.0,
+   "note": "the feed switches to group 1"
+  },
+  {
+   "scene": "circle",
+   "t": 4.78,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "group tab 2"
+  },
+  {
+   "scene": "circle",
+   "t": 4.81,
+   "sound": "swipe_2_quick_swipe.mp3",
+   "db": -18.0,
+   "note": "the feed switches to group 2"
+  },
+  {
+   "scene": "circle",
+   "t": 5.68,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "group tab 3"
+  },
+  {
+   "scene": "circle",
+   "t": 5.71,
+   "sound": "swipe_2_quick_swipe.mp3",
+   "db": -18.0,
+   "note": "the feed switches to group 3"
+  },
+  {
+   "scene": "relog_txt",
+   "t": 0.05,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -16.0,
+   "note": "the relog line arrives"
+  },
+  {
+   "scene": "relog",
+   "t": 0.6,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -18.0,
+   "note": "the camera moves to the lower two thirds"
+  },
+  {
+   "scene": "relog",
+   "t": 1.45,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -21.0,
+   "note": "the picker opens: lean in"
+  },
+  {
+   "scene": "relog",
+   "t": 2.65,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -21.0,
+   "note": "down to the composer"
+  },
+  {
+   "scene": "relog",
+   "t": 3.45,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -21.0,
+   "note": "up to the result"
+  },
+  {
+   "scene": "relog",
+   "t": 1.4,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -12.0,
+   "note": "\"/\" typed"
+  },
+  {
+   "scene": "relog",
+   "t": 1.5,
+   "sound": "swipe_2_quick_swipe.mp3",
+   "db": -14.0,
+   "note": "the dish picker slides up"
+  },
+  {
+   "scene": "relog",
+   "t": 2.55,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "the dish is picked"
+  },
+  {
+   "scene": "relog",
+   "t": 3.35,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Send"
+  },
+  {
+   "scene": "relog",
+   "t": 3.4,
+   "sound": "pop_2_clean_minimal_pop.mp3",
+   "db": -10.0,
+   "note": "the message leaves"
+  },
+  {
+   "scene": "relog",
+   "t": 3.5,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -15.0,
+   "note": "the result lands at once"
+  },
+  {
+   "scene": "relog",
+   "t": 4.35,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Save meal"
+  },
+  {
+   "scene": "relog",
+   "t": 4.5,
+   "sound": "notify_1_soft_notification.mp3",
+   "db": -11.0,
+   "note": "saved"
+  },
+  {
+   "scene": "share_txt",
+   "t": 0.05,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -16.0,
+   "note": "the share line arrives"
+  },
+  {
+   "scene": "pizza",
+   "t": 0.95,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -19.0,
+   "note": "a small camera move"
+  },
+  {
+   "scene": "pizza",
+   "t": 1.5,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Save"
+  },
+  {
+   "scene": "pizza",
+   "t": 1.6,
+   "sound": "notify_1_soft_notification.mp3",
+   "db": -12.0,
+   "note": "saved"
+  },
+  {
+   "scene": "pizza",
+   "t": 3.0,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Share"
+  },
+  {
+   "scene": "pizza",
+   "t": 3.05,
+   "sound": "whoosh_short_2_fast_sweep.wav",
+   "db": -13.0,
+   "note": "the share sheet opens"
+  },
+  {
+   "scene": "pizza",
+   "t": 4.6,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Split it"
+  },
+  {
+   "scene": "pizza",
+   "t": 5.15,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "friend 1 added"
+  },
+  {
+   "scene": "pizza",
+   "t": 5.2,
+   "sound": "pop_1_pop.mp3",
+   "db": -13.0,
+   "note": "friend 1 joins the bar (0.65 s apart)"
+  },
+  {
+   "scene": "pizza",
+   "t": 5.8,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "friend 2 added"
+  },
+  {
+   "scene": "pizza",
+   "t": 5.85,
+   "sound": "pop_1_pop.mp3",
+   "db": -13.0,
+   "note": "friend 2 joins the bar (0.65 s apart)"
+  },
+  {
+   "scene": "pizza",
+   "t": 6.45,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "friend 3 added"
+  },
+  {
+   "scene": "pizza",
+   "t": 6.5,
+   "sound": "pop_1_pop.mp3",
+   "db": -13.0,
+   "note": "friend 3 joins the bar (0.65 s apart)"
+  },
+  {
+   "scene": "pizza",
+   "t": 7.1,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "friend 4 added"
+  },
+  {
+   "scene": "pizza",
+   "t": 7.15,
+   "sound": "pop_1_pop.mp3",
+   "db": -13.0,
+   "note": "friend 4 joins the bar (0.65 s apart)"
+  },
+  {
+   "scene": "pizza",
+   "t": 7.25,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -18.0,
+   "note": "a small camera move"
+  },
+  {
+   "scene": "pizza",
+   "t": 8.05,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Split evenly"
+  },
+  {
+   "scene": "pizza",
+   "t": 8.1,
+   "sound": "swipe_2_quick_swipe.mp3",
+   "db": -15.0,
+   "note": "the shares even out"
+  },
+  {
+   "scene": "pizza",
+   "t": 9.1,
+   "sound": "swipe_2_quick_swipe.mp3",
+   "db": -12.0,
+   "pan": -0.2,
+   "note": "the portion drag starts"
+  },
+  {
+   "scene": "pizza",
+   "t": 9.15,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -24.0,
+   "note": "drag tick 1 of 5 as the share changes"
+  },
+  {
+   "scene": "pizza",
+   "t": 9.338,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -24.0,
+   "note": "drag tick 2 of 5 as the share changes"
+  },
+  {
+   "scene": "pizza",
+   "t": 9.525,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -24.0,
+   "note": "drag tick 3 of 5 as the share changes"
+  },
+  {
+   "scene": "pizza",
+   "t": 9.713,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -24.0,
+   "note": "drag tick 4 of 5 as the share changes"
+  },
+  {
+   "scene": "pizza",
+   "t": 9.9,
+   "sound": "click_ui_1_tap_notification.mp3",
+   "db": -24.0,
+   "note": "drag tick 5 of 5 as the share changes"
+  },
+  {
+   "scene": "pizza",
+   "t": 10.15,
+   "sound": "whoosh_short_1_fast_whoosh.wav",
+   "db": -18.0,
+   "note": "a small camera move"
+  },
+  {
+   "scene": "pizza",
+   "t": 10.9,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "Share"
+  },
+  {
+   "scene": "pizza",
+   "t": 10.9,
+   "sound": "impact_3_futuristic_bass_hit.wav",
+   "db": -12.0,
+   "note": "the share is sent: confetti"
+  },
+  {
+   "scene": "pizza",
+   "t": 10.93,
+   "sound": "notify_2_success_software_tone.wav",
+   "db": -10.0,
+   "note": "success under the confetti"
+  },
+  {
+   "scene": "pizza",
+   "t": 11.35,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -16.0,
+   "note": "out of the share"
+  },
+  {
+   "scene": "pizza",
+   "t": 11.75,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -16.0,
+   "note": "the shared card settles"
+  },
+  {
+   "scene": "micro",
+   "t": 0.05,
+   "sound": "whoosh_short_3_swoosh_015.mp3",
+   "db": -16.0,
+   "note": "\"Not just calories and macros.\" arrives"
+  },
+  {
+   "scene": "micro",
+   "t": 1.0,
+   "sound": "whoosh_long_2_cinematic_swoosh.wav",
+   "db": -11.0,
+   "note": "the tiles burst out of the centre"
+  },
+  {
+   "scene": "micro",
+   "t": 1.08,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -17.0,
+   "pan": -0.4,
+   "note": "tile pop 1 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 1.17,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -16.0,
+   "pan": -0.3,
+   "note": "tile pop 2 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 1.26,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -15.0,
+   "pan": -0.2,
+   "note": "tile pop 3 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 1.35,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -17.0,
+   "pan": -0.1,
+   "note": "tile pop 4 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 1.44,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -16.0,
+   "note": "tile pop 5 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 1.53,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -15.0,
+   "pan": 0.1,
+   "note": "tile pop 6 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 1.62,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -17.0,
+   "pan": 0.2,
+   "note": "tile pop 7 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 1.71,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -16.0,
+   "pan": 0.3,
+   "note": "tile pop 8 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 1.8,
+   "sound": "pop_3_dry_pop_up.wav",
+   "db": -15.0,
+   "pan": 0.4,
+   "note": "tile pop 9 of 9 (0.09 s apart, panned left to right; one pop per two tiles)"
+  },
+  {
+   "scene": "micro",
+   "t": 2.8,
+   "sound": "whoosh_long_1_air_woosh.wav",
+   "db": -12.0,
+   "note": "the tiles fly home as the phone arrives"
+  },
+  {
+   "scene": "end",
+   "t": 0.38,
+   "sound": "click_ui_3_modern_click_box_check.wav",
+   "db": -8.0,
+   "note": "a tap on Home"
+  },
+  {
+   "scene": "end",
+   "t": 0.5,
+   "sound": "notify_1_soft_notification.mp3",
+   "db": -13.0,
+   "note": "the chime after it"
+  },
+  {
+   "scene": "end",
+   "t": 1.2,
+   "sound": "whoosh_long_2_cinematic_swoosh.wav",
+   "db": -10.0,
+   "note": "the wordmark travels to the centre"
+  },
+  {
+   "scene": "end",
+   "t": 1.95,
+   "sound": "impact_2_sub_bass_boom.mp3",
+   "db": -7.0,
+   "note": "the wordmark lands"
+  },
+  {
+   "scene": "end",
+   "t": 2.15,
+   "sound": "pop_1_pop.mp3",
+   "db": -13.0,
+   "note": "the call to action appears"
+  }
+ ]
+}

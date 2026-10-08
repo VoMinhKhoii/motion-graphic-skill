@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hooks and composition</title>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F8F7F4;font-family:'Be Vietnam Pro',sans-serif;color:#141413}
+.eb{font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#6E6D66}
+.h1{margin:0;font-size:56px;line-height:1.05;font-weight:600;letter-spacing:-0.02em}
+.h2{margin:0;font-size:28px;line-height:1.2;font-weight:600;letter-spacing:-0.01em}
+.lead{margin:0;font-size:19px;line-height:1.55;color:#141413;max-width:1080px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.card{background:#FFFFFF;border:1px solid #E2DFD4;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.fr{width:100%;aspect-ratio:16/9;object-fit:contain;background:#141413;display:block}
+.cb{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px}
+.nm{display:flex;gap:10px;align-items:baseline}
+.cd{font-size:13px;font-weight:600;color:#6E6D66;min-width:28px}
+.nt{margin:0;font-size:19px;line-height:1.3;font-weight:600;letter-spacing:-0.01em}
+.wh{font-size:13px;line-height:1.4;color:#6E6D66}
+.rc{margin:0;font-size:14px;line-height:1.55;color:#141413}
+.fk{margin:0;font-size:14px;line-height:1.5;color:#141413;background:#F0EAE0;border-radius:8px;padding:10px 12px}
+.fk b{font-weight:600}
+.src{font-size:12px;line-height:1.5;color:#6E6D66;border-top:1px solid #E2DFD4;padding-top:10px}
+.src b{font-weight:500;color:#141413}
+.li{margin:0;padding:10px 0;border-bottom:1px solid #E2DFD4;font-size:15px;line-height:1.5}
+.stat{background:#FFFFFF;border:1px solid #E2DFD4;border-radius:12px;padding:18px 20px;display:flex;flex-direction:column;gap:4px}
+.stat b{font-size:40px;line-height:1;font-weight:600;letter-spacing:-0.02em}
+.stat span{font-size:14px;line-height:1.4;color:#6E6D66}
+.cap{font-size:12.5px;line-height:1.45;color:#6E6D66;padding-top:8px}
+.cap b{font-weight:500;color:#141413}
+.box{background:#FFFFFF;border:1px solid #E2DFD4;border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:6px}
+.tag{display:inline-block;font-size:12px;font-weight:500;background:#F0EAE0;border-radius:6px;padding:2px 7px;margin:2px 4px 2px 0}
+</style>
+</helmet>
+<div style="width: 1440px; height: 5394px; box-sizing: border-box; padding: 64px; display: flex; flex-direction: column; gap: 40px; background: #F8F7F4; overflow: hidden">
+<div style="display: flex; flex-direction: column; gap: 14px"><div class="eb">Technique collection · 1 / 5</div><h1 class="h1">Hooks and composition</h1><p class="lead">How the first three seconds and each frame are built. 20 cards, each merged from the techniques the eight study passes recorded. The frame on every card is a real frame from the first film listed under it.</p></div>
+<div style="display: flex; flex-direction: column; gap: 20px"><h2 class="h2">Hooks · the first 3 seconds</h2><div class="grid"><div class="card"><img class="fr" src="../img/e0ed4adf16feb41fa9e2612ca9841dc9.jpg" alt="Grok 4.5 at 0:00.6">
+<div class="cb"><div class="nm"><span class="cd">H1</span><p class="nt">Frame 1 is typing</p></div>
+<div class="wh">Naming the product with its own gesture</div>
+<p class="rc">One centred line, cap height 5–8% of the frame, types at 20–34 characters/s straight into its final layout (no reflow). Fresh letters land in an accent and settle to ink, or the product word flickers through 4–8 colours every 0.125 s and settles by 1.5 s.</p>
+<p class="fk"><b>For Kallo:</b> The meal types itself on frame 1: “rice with a grilled chicken thigh, skin removed” at ~20 characters/s, food words landing tan, then settling to ink.</p>
+<div class="src"><b>SpaceXAI · Grok 4.5</b> · 0:00.6<br>Also: Manus · Manus Browser Operator 0:01.6; OpenAI · Codex rate limits 0:00.4; OpenAI · Astra for Law 0:00.9; OpenAI · ChatGPT Work 0:04.9</div></div></div><div class="card"><img class="fr" src="../img/4895b6e10c7e62844888c817f47a7574.jpg" alt="Dispatch at 0:02.2">
+<div class="cb"><div class="nm"><span class="cd">H2</span><p class="nt">The headline turns out to be the app</p></div>
+<div class="wh">Naming it and showing it in one beat, no cut</div>
+<p class="rc">A two-line centred line (7.1% of height per line) holds on cream for 1.1 s. At 2.0–2.25 s a frameless phone slab (45% of width) rises from below around the words, which never move: they were the app’s screen all along.</p>
+<p class="fk"><b>For Kallo:</b> The typed meal sits alone on the ground; at 2 s the iPhone slab rises around it and the words become Kallo’s input.</p>
+<div class="src"><b>Claude · Dispatch</b> · 0:02.2</div></div></div><div class="card"><img class="fr" src="../img/c6dd53d1b8f6df7daf27f9830287088b.jpg" alt="Connectors: Fusion at 0:01.2">
+<div class="cb"><div class="nm"><span class="cd">H3</span><p class="nt">One control, one state change, two seconds</p></div>
+<div class="wh">A muted 2 s hook with a single interaction</div>
+<p class="rc">A single component (49–59% of width) alone on off-white or full-bleed brand colour. A cursor glides in (0–0.4 s, ease-out) or the card pushes in 5%. The state flips in 2 frames at ~1.2 s; hold to 2.25 s; hard cut.</p>
+<p class="fk"><b>For Kallo:</b> One ingredient row on tan: “Chicken thigh, skin removed · — kcal” flips to its number in 2 frames. That flip is the hook.</p>
+<div class="src"><b>Claude · Connectors: Fusion</b> · 0:01.2<br>Also: Claude · Claude Design 0:00.5; Claude · Claude connector for Blender 0:01.2; Manus · Manus Skills 0:01.9</div></div></div><div class="card"><img class="fr" src="../img/9a7cb85b3084c562a47df412c8e49884.jpg" alt="DevDay teaser at 0:00.1">
+<div class="cb"><div class="nm"><span class="cd">H4</span><p class="nt">Start too close to read</p></div>
+<div class="wh">Stopping the scroll with abstraction first</div>
+<p class="rc">Frame 1 is 100% one surface or shape (a disc, fur, the crop of a mark), unreadable. Pull out in 0.9 s ease-out until it reads, or hold 0.8–1.1 s per macro shot with a slow push, then cut.</p>
+<p class="fk"><b>For Kallo:</b> Open inside one digit of the result, or the grain of the rice, edge to edge, then pull out in 0.9 s to the full line.</p>
+<div class="src"><b>OpenAI · DevDay teaser</b> · 0:00.1<br>Also: OpenAI · DevDay sting 0:01.2; SpaceXAI · Rename sting 0:02.5</div></div></div><div class="card"><img class="fr" src="../img/4b20bba6e4603cbf474e8115196ce0ee.jpg" alt="Claude Fable 5 at 0:00.1">
+<div class="cb"><div class="nm"><span class="cd">H5</span><p class="nt">A crowded frame 1; one thing flies at the lens</p></div>
+<div class="wh">Scroll-stop in the first 3 frames</div>
+<p class="rc">The first frame is a full-bleed archival plate crowded with 8+ specimens, zero empty space. One cut-out (~45% of width) is already mid-flight toward camera with ~20 px motion blur; the next cut lands at 0.125 s.</p>
+<p class="fk"><b>For Kallo:</b> Frame 1 is a full table of everyday dishes from many kitchens, top-down, edge to edge; one lime wedge flies at the lens. Never one item on empty cream.</p>
+<div class="src"><b>Claude · Claude Fable 5</b> · 0:00.1</div></div></div><div class="card"><img class="fr" src="../img/d666775ac54bcf890bc4ee868f50f3be.jpg" alt="Livestream teaser at 0:01.6">
+<div class="cb"><div class="nm"><span class="cd">H6</span><p class="nt">The whole system is on screen at frame 1</p></div>
+<div class="wh">Stating the rule before anything moves</div>
+<p class="rc">A grid of dots already fills the frame (20 px dots, 96 px pitch at 1080p) with a HUD bar top-right; or 3 dots multiply into a 2×5 matrix by 0.5 s with the title split above and below it.</p>
+<p class="fk"><b>For Kallo:</b> Frame 1: one dot per ingredient in the sentence; each dot later opens into that ingredient’s row.</p>
+<div class="src"><b>OpenAI · Livestream teaser</b> · 0:01.6<br>Also: OpenAI · Mathematical Advances 0:01.5</div></div></div><div class="card"><img class="fr" src="../img/ae6684e29b260652403290678c251458.jpg" alt="Voice cloning quiz at 0:01.6">
+<div class="cb"><div class="nm"><span class="cd">H7</span><p class="nt">Give the viewer a question</p></div>
+<div class="wh">A task before the product appears</div>
+<p class="rc">Digital silence 0–2 s. A question fades in at 39% of height (4.7% block, 47% of width), then at 1.3–1.8 s rises to 24% and shrinks to 84% while empty answer slots (grey dotted lines) fade in below.</p>
+<p class="fk"><b>For Kallo:</b> “How much protein is in this?” rises into a header; three empty macro slots wait below; then the meal sentence types in.</p>
+<div class="src"><b>SpaceXAI · Voice cloning quiz</b> · 0:01.6</div></div></div><div class="card"><img class="fr" src="../img/0ad25eaa1aa1e583fd0c0ffc3ea4645c.jpg" alt="Similarweb upgrade at 0:01.4">
+<div class="cb"><div class="nm"><span class="cd">H8</span><p class="nt">The logo rewrites itself into the message</p></div>
+<div class="wh">Turning a logo opener into a line in 2 s</div>
+<p class="rc">The lockup holds 1 s (each logo ~4% of height). From 1.15 s words roll up from below one every 0.125 s, each rising one line height in 0.25 s as the logo rolls out. Or the mark assembles stroke by stroke in grey (0.12–0.75 s), then brightens over 0.5 s.</p>
+<p class="fk"><b>For Kallo:</b> The Kallo wordmark rolls out word by word into “Kallo just read your lunch.” in under 2 s.</p>
+<div class="src"><b>Manus · Similarweb upgrade</b> · 0:01.4<br>Also: SpaceXAI · Rename sting 0:00.6</div></div></div><div class="card"><img class="fr" src="../img/c9cfad2b0e0d47ae110fe626a29fa297.jpg" alt="Sites in Codex at 0:03.4">
+<div class="cb"><div class="nm"><span class="cd">H9</span><p class="nt">Energy lands at 2 s</p></div>
+<div class="wh">Turning a quiet typed opening into momentum</div>
+<p class="rc">Solid colour blocks slam in on the beat at 2.3, 2.8 and 3.3 s, one word each (x-height 15% of the frame), hard cut-in with no easing, bleeding off the edges and overlapping.</p>
+<p class="fk"><b>For Kallo:</b> “type” / “what” / “you ate” on three warm blocks at 2 s, one per beat, over cropped Kallo result cards.</p>
+<div class="src"><b>OpenAI · Sites in Codex</b> · 0:03.4</div></div></div><div class="card"><img class="fr" src="../img/a1efb09c5eaec3c5978a6dd777eef599.jpg" alt="PowerPoint mode at 0:00.0">
+<div class="cb"><div class="nm"><span class="cd">H10</span><p class="nt">Frame 0 is a designed poster</p></div>
+<div class="wh">Controlling the paused preview on X and Threads</div>
+<p class="rc">Frames 0–2 (0.1 s) are a separate thumbnail: the headline at ~7% cap top-centre over the product UI cropped by the bottom edge. The film proper starts on frame 3.</p>
+<p class="fk"><b>For Kallo:</b> Frame 0: the typed meal over its result card, cropped by the bottom edge, so the muted preview already explains Kallo.</p>
+<div class="src"><b>Manus · PowerPoint mode</b> · 0:00.0</div></div></div></div></div>
+<div style="display: flex; flex-direction: column; gap: 20px"><h2 class="h2">Composition · how a frame is built</h2><div class="grid"><div class="card"><img class="fr" src="../img/4d6ad4c699f297e7429daf0cf4156100.jpg" alt="Sites in Codex at 0:05.2">
+<div class="cb"><div class="nm"><span class="cd">C1</span><p class="nt">Edges full, centre clear</p></div>
+<div class="wh">A headline among many examples; the opposite of a void</div>
+<p class="rc">The headline sits in a clear band ~22% of height at the centre. 4–8 product crops, each 35–45% of width, bleed 30–40% off the corners and edges at mixed scales. The frame is full; only the reading line has air.</p>
+<p class="fk"><b>For Kallo:</b> “Any meal, counted.” in the middle; cropped Kallo result cards (ramen, a burrito bowl, eggs on toast, a salad) bleed off all four corners.</p>
+<div class="src"><b>OpenAI · Sites in Codex</b> · 0:05.2<br>Also: OpenAI · Astra for Law 1:14.1; OpenAI · ChatGPT for Financial Services 1:16.0; Manus · PowerPoint mode 0:15.3</div></div></div><div class="card"><img class="fr" src="../img/c7f58eb9cda1c607f76a093fc7e580ba.jpg" alt="Claude Opus 5.5 at 0:06.2">
+<div class="cb"><div class="nm"><span class="cd">C2</span><p class="nt">The subject fills the lower half; the line sits on its edge</p></div>
+<div class="wh">Mood and one claim per shot</div>
+<p class="rc">A convex surface fills the lower 45–65% of the frame, apex at 45–55% of height, plain dark or single-colour space above. One line (7% cap) sits on or straddles the edge; blurs in over 0.5 s, holds ~1.8 s.</p>
+<p class="fk"><b>For Kallo:</b> Use Kallo’s own curve, the ring gauge’s arc or a bowl’s rim, with one line resting on it. Borrow the framing, not the Opus 5.5 horizon montage.</p>
+<div class="src"><b>Claude · Claude Opus 5.5</b> · 0:06.2<br>Also: OpenAI · dots 0:02.8; OpenAI · Daybreak expansion 0:02.0</div></div></div><div class="card"><img class="fr" src="../img/14e390ecc227ed4dfeca0155862fcbe9.jpg" alt="Grok 4.5 at 0:06.5">
+<div class="cb"><div class="nm"><span class="cd">C3</span><p class="nt">One frame, three cells: in, work, out</p></div>
+<div class="wh">A claim with an input and an output</div>
+<p class="rc">1 px #D8D8D8 hairlines at 39% and 60% of width and 31% and 69% of height; the sentence splits across cells, flush to the hairlines; the bottom row fades to white.</p>
+<p class="fk"><b>For Kallo:</b> Left “rice with a grilled chicken thigh, skin removed”, middle the ingredients resolving, right “548 kcal · 37 g protein”. Text in, numbers out, in one still.</p>
+<div class="src"><b>SpaceXAI · Grok 4.5</b> · 0:06.5</div></div></div><div class="card"><img class="fr" src="../img/e77b7fdaa33b0350448aef4df682d749.jpg" alt="Ultrafast at 0:20.0">
+<div class="cb"><div class="nm"><span class="cd">C4</span><p class="nt">Side by side, the same task</p></div>
+<div class="wh">Speed or difference without a claim</div>
+<p class="rc">Two or three portrait cards (31–47% of width, 93–96% of height, 16 px radius, 1 px border) run the same thing: live timers, idle vs live states, or a stat block each. Only the contents move; the layout never does.</p>
+<p class="fk"><b>For Kallo:</b> Left: a food-database search, its timer running while fields fill. Right: Kallo, one sentence, the macros land, timer frozen. Real timings only.</p>
+<div class="src"><b>OpenAI · Ultrafast</b> · 0:20.0<br>Also: SpaceXAI · Voice cloning API 0:14.5; Manus · Branch 0:08.3; OpenAI · Sol and Luna cards 0:02.5</div></div></div><div class="card"><img class="fr" src="../img/0d7271b459adf4b699aa50419feba26e.jpg" alt="Voice cloning quiz at 0:16.0">
+<div class="cb"><div class="nm"><span class="cd">C5</span><p class="nt">Instrument layout: four rows in the middle half</p></div>
+<div class="wh">A question, the slots, the caption; nothing else</div>
+<p class="rc">Everything inside 25–75% of width. Rows at 23.5% (question), 43.3% (slots), 57.5% (labels), 71.9% (caption) of height; the top 21% and bottom 26% stay empty. Two symmetric columns; no logo, rule or border.</p>
+<p class="fk"><b>For Kallo:</b> Question at the top, three macro slots (PROTEIN · CARBS · FAT) in a row, the typed meal as the caption.</p>
+<div class="src"><b>SpaceXAI · Voice cloning quiz</b> · 0:16.0</div></div></div><div class="card"><img class="fr" src="../img/f1247a4290d4d72d700ba2aae30c66f8.jpg" alt="Claude Managed Agents at 0:08.5">
+<div class="cb"><div class="nm"><span class="cd">C6</span><p class="nt">The problem as clutter; the question in the one gap</p></div>
+<div class="wh">Stating the pain before the product</div>
+<p class="rc">12–16 overlapping windows and notes slide in from the edges over 13 s until they cover ~70% of the frame, leaving one horizontal gap ~25% of height where the question sits. Then everything scatters off-frame to one line.</p>
+<p class="fk"><b>For Kallo:</b> A pile of the old way (a nutrition label, a gram spreadsheet, a scale readout, five calorie-site tabs); in the gap: “Logging one meal shouldn’t take five tabs.”</p>
+<div class="src"><b>Claude · Claude Managed Agents</b> · 0:08.5</div></div></div><div class="card"><img class="fr" src="../img/8cc482b10d5dd1a248ee6c851d5648d1.jpg" alt="Dispatch at 0:12.5">
+<div class="cb"><div class="nm"><span class="cd">C7</span><p class="nt">Two devices, one action, the focus swaps</p></div>
+<div class="wh">One action on the phone, work on another screen</div>
+<p class="rc">Phone slab 12.5% of width at x 6–19%; laptop silhouette from 39% of width bleeding off the right. The idle device is defocused (~6 px); focus jumps to whichever device is acting; a hand-drawn line joins them.</p>
+<p class="fk"><b>For Kallo:</b> The iPhone types “two eggs, toast, half an avocado”; the web dashboard on the right fills the day’s rings. iOS and web in one frame, one account.</p>
+<div class="src"><b>Claude · Dispatch</b> · 0:12.5</div></div></div><div class="card"><img class="fr" src="../img/474c2530d0057de1f12ff6216aa4b4e0.jpg" alt="Astra for Law at 0:47.0">
+<div class="cb"><div class="nm"><span class="cd">C8</span><p class="nt">Breadth as an orbit</p></div>
+<div class="wh">Many sources or integrations, no list</div>
+<p class="rc">~34 tiles (9% of height) stream in along an ellipse (96% × 79% of the frame) around a centred headline, closing the ring in ~2 s; the ring turns for 3.5 s, then collapses into the centre.</p>
+<p class="fk"><b>For Kallo:</b> “Real food data” ringed by ingredient chips (“brown rice, 150 g”, “olive oil, 1 tbsp”); they collapse into one result card.</p>
+<div class="src"><b>OpenAI · Astra for Law</b> · 0:47.0<br>Also: Manus · Cloud Computer 0:32.0</div></div></div><div class="card"><img class="fr" src="../img/2dcaefe5fbebe7e11db5edb9ba6649e0.jpg" alt="Financial agent templates at 0:19.5">
+<div class="cb"><div class="nm"><span class="cd">C9</span><p class="nt">One full-bleed colour card for the turn</p></div>
+<div class="wh">The single line that reframes the argument</div>
+<p class="rc">After 18 s on cream, a hard cut to full-bleed terracotta holding one two-line centred line (5.7% per line), words fading in one by one; 4 s, then back.</p>
+<p class="fk"><b>For Kallo:</b> Stay on cream all film and switch to tan once, for “No scanning. No searching. Just say it.”</p>
+<div class="src"><b>Claude · Financial agent templates</b> · 0:19.5</div></div></div><div class="card"><img class="fr" src="../img/db045c5dc824310495e26ce022c726f1.jpg" alt="Manus Skills at 0:16.0">
+<div class="cb"><div class="nm"><span class="cd">C10</span><p class="nt">Pinned headline; the content steps sideways</p></div>
+<div class="wh">Several examples without new title cards</div>
+<p class="rc">The headline is pinned top-centre (y ~11%, cap ~7%) for 13 s. Centre window 61% × 70%; neighbours at 0.75 scale and 50% opacity, cropped by the edges; steps sideways in ~0.6 s ease-in-out.</p>
+<p class="fk"><b>For Kallo:</b> “Any meal. Any kitchen.” pinned; phone and web windows step sideways, each with a different meal typed and resolved.</p>
+<div class="src"><b>Manus · Manus Skills</b> · 0:16.0</div></div></div></div></div>
+</div>
+</x-dc>
+
+</body>
+</html>

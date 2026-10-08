@@ -1,0 +1,7 @@
+node_modules/
+out/
+public/rec/*.mp4
+public/img/sample_*.jpg
+public/audio/*.wav
+*.log
+.DS_Store

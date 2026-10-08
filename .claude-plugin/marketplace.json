@@ -1,0 +1,14 @@
+{
+  "name": "motion-graphic-skill",
+  "description": "The motion-graphic skill: launch films for software products, with a measured reference library and a worked example.",
+  "owner": { "name": "The Kallo team" },
+  "plugins": [
+    {
+      "name": "motion-graphic",
+      "source": ".",
+      "description": "Launch films, teasers and app previews for software products, from taste interview and reference research to storyboard, real-UI capture, Remotion build, sound and delivery.",
+      "category": "design",
+      "tags": ["video", "motion-design", "launch", "remotion", "marketing"]
+    }
+  ]
+}

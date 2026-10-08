@@ -1,0 +1,24 @@
+{
+  "name": "remotion-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sample": "bash scripts/make_sample_clip.sh",
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "stills": "node render/stills.mjs",
+    "master": "bash render/master.sh"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.530",
+    "@remotion/cli": "4.0.530",
+    "@remotion/renderer": "4.0.530",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.530"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}
