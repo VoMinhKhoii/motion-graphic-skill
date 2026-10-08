@@ -1,5 +1,8 @@
 # Worked example: the Kallo launch film
 
+> This listing is the lean build of the skill. The media of the worked example (the film, the 63-board Kallo storyboard archive and the teaser study page) are in the full repository: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install from there with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace to get them).
+
+
 One full run of the launch-video process, from the brief to the delivered films, for a real product. It is told as it happened, wrong turns included, because the wrong turns are where most of the method came from.
 
 This is evidence of the method, not a style to copy. Kallo's owner asked for one particular taste. Your product and your taste will lead to different references, different cards and a different film. What should carry over is the order of the work and the checks.

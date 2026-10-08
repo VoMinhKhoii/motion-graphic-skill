@@ -8,7 +8,7 @@ What the worked example learned from its reference films, kept here because none
 | `technique-cards.md` | 92 technique cards, grouped by role (hooks, text, transitions, inserts, proof, endings, sound), each with when to use it, a measured recipe and its source film. |
 | `directions.md` | Ten directions (D1–D10) clustered from the cards, each with its rules, its films and its risks. |
 | `boards/index.html` | The research boards, offline, with a real frame on every card: the reference overview, the five technique collections, the ten directions (`refs.html`); where the seconds go, the transition study with 12 moves as 13-frame strips, and the rules (`motion.html`). |
-| `teaser-study.html` | 25 pre-launch teasers, 10 broken down frame by frame, the reveal ladder (how much each one shows, and when the words arrive). |
+| `teaser-study.html` ([in the full repository](https://github.com/VoMinhKhoii/motion-graphic-skill/tree/main/skills/motion-graphic/library/research)) | 25 pre-launch teasers, 10 broken down frame by frame, the reveal ladder (how much each one shows, and when the words arrive). |
 
 Each card and direction ends with a "For Kallo" line or a worked-example note: that is how the generic technique was applied to one product. Read it as an example, not as the rule for yours.
 

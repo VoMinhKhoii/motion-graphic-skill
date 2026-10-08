@@ -1,6 +1,6 @@
 # motion-graphic
 
-[![The Kallo launch film, made with this skill: highlights](docs/demo.webp)](skills/motion-graphic/examples/kallo-launch-film/assets/films/kallo_v9d_16x9_light.mp4)
+[![The Kallo launch film, made with this skill: highlights](docs/demo.webp)](https://github.com/VoMinhKhoii/motion-graphic-skill/blob/main/skills/motion-graphic/examples/kallo-launch-film/assets/films/kallo_v9d_16x9_light.mp4)
 
 *Made with this skill: the Kallo launch film, 17 s of highlights. Click for the full 83 s film with sound (16:9, 1080p60). Every screen is the real app, recorded.*
 

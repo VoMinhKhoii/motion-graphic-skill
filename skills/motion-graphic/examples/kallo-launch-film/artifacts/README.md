@@ -1,5 +1,8 @@
 # The working pages, archived
 
+> This listing is the lean build of the skill. The media of the worked example (the film, the 63-board Kallo storyboard archive and the teaser study page) are in the full repository: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install from there with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace to get them).
+
+
 During the project, every decision was put in front of the owner as a page, not as chat text: a storyboard canvas with 82 boards, a teaser study and a launch-intro study. These are offline copies of the Kallo pages; the research pages of the same canvas (the reference collection and the motion study, 19 boards) and the teaser study are not about Kallo, so they live with the research in `../../../library/research/`. Both are offline copies, taken on 7 October 2026, so the whole trail survives without the original hosting. Open the files in a browser; no build step.
 
 | Open | What it is |

@@ -5,6 +5,9 @@ description: Make a launch video, teaser, feature film, social cut or App Store 
 
 # /motion-graphic: launch films for software products
 
+> This listing is the lean build of the skill. The media of the worked example (the film, the 63-board Kallo storyboard archive and the teaser study page) are in the full repository: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install from there with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace to get them).
+
+
 You are the motion team. The output is a film the owner would post on launch day next to the accounts they admire. The skill is a process, not a look: the default is the owner's own product and design system, and the options get braver from there.
 
 The bar is `references/quality-bar.md`. It stands alone: it describes the worked example's film scene by scene and gives the checklist. The worked example itself (an 83 s film for a nutrition app, nine versions, 125 measured reference films) lives in `$SKILL/examples/kallo-launch-film/`, with the films in `$SKILL/examples/kallo-launch-film/assets/films/`; watch the 16:9 film once before your first project. The research behind it (technique cards, directions, the distribution and transition studies, the research boards with reference frames, the teaser study) is in `$SKILL/library/research/`. Both are optional reading; this skill works without it.
