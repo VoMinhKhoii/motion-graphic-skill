@@ -125,7 +125,7 @@ These describe one taste (OpenAI, Claude, Manus and xAI launch films, 2025–26)
 | Camera | Still 54% · inside-frame motion 23% · pan 6% · zoom in 4% · zoom out 4% |
 | Fixed element | 11 of 12 exemplar transitions hold one element in place |
 
-The write-up with the twelve exemplar moves is in `library/research/findings.md`, and the frame strips of each move in `library/research/boards/motion.html`. The same medians are in `$SKILL/library/baselines.md`.
+The write-up with the twelve exemplar moves is in `library/research/findings.md`, and the frame strips of each move in `library/research/boards/README.md (motion study)`. The same medians are in `$SKILL/library/baselines.md`.
 
 ## Turn numbers into rules
 

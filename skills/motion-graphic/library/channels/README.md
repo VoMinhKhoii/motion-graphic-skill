@@ -1,6 +1,6 @@
 # YouTube channel scans
 
-Twenty YouTube channels were listed on 7 October 2026 for the teaser study, with `yt-dlp --flat-playlist -j` on each channel's `/videos` and `/shorts` tabs (newest 200 of each). Nothing was downloaded at this step. Each CSV here is a compact candidate list for one channel.
+Twenty YouTube channels were listed on 7 October 2026 for the teaser study, with `yt-dlp --flat-playlist -j` on each channel's `/videos` and `/shorts` tabs (newest 200 of each). Nothing was downloaded at this step. Each JSON file here is a compact candidate list (one object per row) for one channel.
 
 ## Columns
 
@@ -36,7 +36,7 @@ Rows are sorted with candidates first, then by views. To keep the files small, o
 | TheBrowserCompany | 113 | 28 | 9 | Arc and Dia "Introducing" films. |
 | Humane | 34 | 4 | 3 | OS update films. |
 | rabbitinc | 12 | 9 | 1 | Few launch films. |
-| raycast | 35 | none | none | Wrong channel: this handle is a VFX tutorial channel. The Raycast app is `@raycastapp`; its two teasers are in `../teasers.csv`. Not shipped. |
+| raycast | 35 | none | none | Wrong channel: this handle is a VFX tutorial channel. The Raycast app is `@raycastapp`; its two teasers are in `../teasers.json`. Not shipped. |
 | NotionHQ | 0 | none | none | The scan returned nothing. Notion's teaser came from X instead. |
 | arcinternet | 0 | none | none | Empty scan. Use TheBrowserCompany. |
 | nothing | 0 | none | none | Empty scan. Use NothingTechnology. |

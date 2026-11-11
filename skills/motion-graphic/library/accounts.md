@@ -1,9 +1,9 @@
 # Accounts by style
 
-Every account studied for the worked example, what it is good for, and the numbers we measured on it. Styles follow the menu in `references/intake.md`. Film-level rows are in `launch-films.csv`, `google-films.csv` and `teasers.csv`.
+Every account studied for the worked example, what it is good for, and the numbers we measured on it. Styles follow the menu in `references/intake.md`. Film-level rows are in `launch-films.json`, `google-films.json` and `teasers.json`.
 
 How the numbers were made:
-- **Length:** median duration of the films downloaded from the account (all, and the ones kept under the "motion design only" rule). Source: the post listings, `launch-films.csv`.
+- **Length:** median duration of the films downloaded from the account (all, and the ones kept under the "motion design only" rule). Source: the post listings, `launch-films.json`.
 - **Cuts a minute:** the measured pass, every hard change in the picture at 4 fps, median per account. Source: `research/findings.md`.
 - **Designed transitions a minute, demo share, text share:** the watched pass, 6 films per lab account and 8 Google films logged second by second. Demo share is the share of runtime with the product on screen. Text share is standalone text cards. Recomputed from the logs for this library.
 - **Views:** median views of the kept films on 30 September 2026.
@@ -23,7 +23,7 @@ What each is good for:
 - **Manus.** Many short feature films from one template: dot-grid grey canvas, prompt card, rebuilt result, one continuous camera (D1). Also the poster loops for small updates (D10) and a device-shape morph (*Manus Desktop*). The best source when the film must be cheap and repeatable.
 - **xAI.** Dark instrument films: idle dots that turn into live bars, grey words that snap to white, one accent colour, the product's own sound (D6). Also the light caret system of *Grok 4.5* (D1) and fluid-gradient partner loop cards (D10). Few cuts; motion lives inside the frame.
 
-Styles inside these accounts (from direction membership, `launch-films.csv` column `style_tags`):
+Styles inside these accounts (from direction membership, `launch-films.json` column `style_tags`):
 
 | Style | Films | Accounts |
 |---|---|---|
@@ -44,7 +44,7 @@ Good for: title splits that open onto the first UI card, blur pull-backs, one hu
 
 ## Teaser accounts
 
-From the 25-teaser study (`teasers.csv`). Lengths are of the teasers we downloaded.
+From the 25-teaser study (`teasers.json`). Lengths are of the teasers we downloaded.
 
 | Account | Teasers | Length range | Good for | Ladder rung |
 |---|---|---|---|---|

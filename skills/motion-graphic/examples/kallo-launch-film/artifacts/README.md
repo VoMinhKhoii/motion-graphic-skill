@@ -1,6 +1,6 @@
 # The working pages, archived
 
-> This listing is the lean build of the skill. The media of the worked example (the film, the 63-board Kallo storyboard archive and the teaser study page) are in the full repository: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install from there with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace to get them).
+> This listing is the lean build of the skill. The Claude plugin directory accepts only text and images from publishers that are not verified, so this copy leaves out the scripts, the Remotion starter, the films, the storyboard archive and the teaser study page; their guides are still here. The full repository has everything: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install it with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace).
 
 
 During the project, every decision was put in front of the owner as a page, not as chat text: a storyboard canvas with 82 boards, a teaser study and a launch-intro study. These are offline copies of the Kallo pages; the research pages of the same canvas (the reference collection and the motion study, 19 boards) and the teaser study are not about Kallo, so they live with the research in `../../../library/research/`. Both are offline copies, taken on 7 October 2026, so the whole trail survives without the original hosting. Open the files in a browser; no build step.
@@ -8,7 +8,7 @@ During the project, every decision was put in front of the owner as a page, not 
 | Open | What it is |
 |---|---|
 | `storyboard-canvas/index.html` | The Kallo pages of the canvas (63 boards), page by page. Each page opens as one scroll of its boards; each board also opens alone at full size (1440 px wide). |
-| `launch-intros.html` | Launch-screen intro directions for the app itself: the wordmark animates while the app loads underneath. Interactive. |
+| `launch-intros.md` | Launch-screen intro directions for the app itself: the wordmark animates while the app loads underneath. This copy is a still of the page with its text; the interactive page, which plays every direction, is in the full repository. |
 
 ## The canvas pages, in the order they were made
 

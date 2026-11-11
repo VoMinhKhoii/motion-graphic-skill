@@ -1,6 +1,6 @@
 # Worked example: the Kallo launch film
 
-> This listing is the lean build of the skill. The media of the worked example (the film, the 63-board Kallo storyboard archive and the teaser study page) are in the full repository: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install from there with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace to get them).
+> This listing is the lean build of the skill. The Claude plugin directory accepts only text and images from publishers that are not verified, so this copy leaves out the scripts, the Remotion starter, the films, the storyboard archive and the teaser study page; their guides are still here. The full repository has everything: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install it with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace).
 
 
 One full run of the launch-video process, from the brief to the delivered films, for a real product. It is told as it happened, wrong turns included, because the wrong turns are where most of the method came from.

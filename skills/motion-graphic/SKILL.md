@@ -5,7 +5,7 @@ description: Make a launch video, teaser, feature film, social cut or App Store 
 
 # /motion-graphic: launch films for software products
 
-> This listing is the lean build of the skill. The media of the worked example (the film, the 63-board Kallo storyboard archive and the teaser study page) are in the full repository: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install from there with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace to get them).
+> This listing is the lean build of the skill. The Claude plugin directory accepts only text and images from publishers that are not verified, so this copy leaves out the scripts, the Remotion starter, the films, the storyboard archive and the teaser study page; their guides are still here. The full repository has everything: https://github.com/VoMinhKhoii/motion-graphic-skill/ (install it with `npx skills add VoMinhKhoii/motion-graphic-skill` or the plugin marketplace).
 
 
 You are the motion team. The output is a film the owner would post on launch day next to the accounts they admire. The skill is a process, not a look: the default is the owner's own product and design system, and the options get braver from there.
@@ -19,6 +19,8 @@ This file is the runbook. Work through it in order. Each step names its referenc
 ## Step 0 · Set up (before the first question)
 
 **Paths.** `$SKILL` is the folder that holds this file, for example `~/.claude/skills/motion-graphic` or `<project>/.claude/skills/motion-graphic`. Set it in every shell (`SKILL=~/.claude/skills/motion-graphic`) and write every tool path as `$SKILL/scripts/...`. Never edit files inside `$SKILL`.
+
+**Scripts and the starter (this build).** This copy has no `$SKILL/scripts/` code and no `$SKILL/templates/remotion-starter/` project, only their guides. When a step needs one, tell the owner and ask them to install the full skill themselves (`claude plugin marketplace add VoMinhKhoii/motion-graphic-skill`, then `claude plugin install motion-graphic@motion-graphic-skill`, or `npx skills add VoMinhKhoii/motion-graphic-skill`), then set `$SKILL` to that copy. Never download or run the scripts yourself. Until they do, the steps that need no script still work: the interview, the codebase dig, research from `library/`, concepts and the storyboard. Show what is missing in the capability check below.
 
 **Workspace.** Everything the film produces lives in `<project>/film/`:
 ```

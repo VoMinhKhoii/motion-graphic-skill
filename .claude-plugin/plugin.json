@@ -1,7 +1,7 @@
 {
   "name": "motion-graphic",
   "displayName": "Motion graphic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make launch films, teasers and app previews for software products at in-house motion-team quality: taste interview, codebase dig, reference research with measured transitions and composition, film concepts, storyboard sign-off, real-UI capture, a Remotion engine, sound, delivery.",
   "author": {
     "name": "The Kallo team"
@@ -19,7 +19,5 @@
     "marketing",
     "app preview"
   ],
-  "documentationUrl": "https://github.com/VoMinhKhoii/motion-graphic-skill#readme",
-  "supportUrl": "https://github.com/VoMinhKhoii/motion-graphic-skill/issues",
   "privacyPolicyUrl": "https://github.com/VoMinhKhoii/motion-graphic-skill/blob/main/PRIVACY.md"
 }

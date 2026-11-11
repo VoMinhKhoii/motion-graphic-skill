@@ -48,9 +48,9 @@ skills/motion-graphic/
     review-loop.md         reading feedback, verifying, iterating
     teaser.md              pre-launch teasers and the reveal ladder
   library/                 every reference we studied: links, measurements, style tags
-    launch-films.csv       125 launch films (OpenAI, Claude, xAI, Manus)
-    google-films.csv       38 Google films, motion vocabulary
-    teasers.csv            25 pre-launch teasers
+    launch-films.json      125 launch films (OpenAI, Claude, xAI, Manus)
+    google-films.json      38 Google films, motion vocabulary
+    teasers.json           25 pre-launch teasers
     channels/              20 scanned YouTube channels, likely launch films flagged
     accounts.md            style → accounts to study, and how thin each style is
     baselines.md           corpus numbers to compare your film against
@@ -58,13 +58,13 @@ skills/motion-graphic/
     research/              the distilled research: findings (where the seconds go,
                            298 transitions, 12 moves), 92 technique cards, 10 directions,
                            the research boards with a real frame per card, the teaser study
-  scripts/
+  scripts/                 (guides only in the Claude plugin directory build; code in the full repository)
     research/              discover films (X, Threads, YouTube, TikTok, web), download,
                            analyse, run a whole corpus, publish a research board
     capture/               iOS Simulator and Android recording, letter-level typing,
                            web screencast, VFR→CFR, a stall finder
     sound/                 SFX catalogue, cue-sheet mixer with music-hit alignment and loudness
-  templates/remotion-starter/   runnable Remotion project: spring camera, segment-cut
+  templates/remotion-starter/   runnable Remotion project (README only in the directory build): spring camera, segment-cut
                                 recordings, iphone/android/browser devices, pointer, cut-outs,
                                 typing, worlds, 9:16 safe band, end card, render scripts
   examples/kallo-launch-film/   the worked example: everything about Kallo, start to finish

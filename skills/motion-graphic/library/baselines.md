@@ -8,22 +8,22 @@ These come from four AI-lab accounts (OpenAI, Claude, xAI, Manus) plus Google, p
 
 | Item | Value | Source |
 |---|---|---|
-| Launch films downloaded | 125 (OpenAI 32, Claude 31, xAI 31, Manus 31) | `launch-films.csv`, corpus.md |
-| Kept under "motion design only" | 85 (OpenAI 21, Claude 23, xAI 17, Manus 24) | `launch-films.csv` column `kept_motion_design` |
+| Launch films downloaded | 125 (OpenAI 32, Claude 31, xAI 31, Manus 31) | `launch-films.json`, corpus.md |
+| Kept under "motion design only" | 85 (OpenAI 21, Claude 23, xAI 17, Manus 24) | `launch-films.json` column `kept_motion_design` |
 | Left out (people or live action) | 40 | same |
 | Techniques recorded / cards after merging | 267 / 92 | corpus.md, technique-cards.md |
-| Google films measured / watched | 38 / 8 | `google-films.csv` |
-| Teasers downloaded | 25 (10 broken down frame by frame) | `teasers.csv` |
+| Google films measured / watched | 38 / 8 | `google-films.json` |
+| Teasers downloaded | 25 (10 broken down frame by frame) | `teasers.json` |
 
 ## Length
 
 | Measure | Value | Source |
 |---|---|---|
-| Kept launch film, median | 30.0 s | recomputed, `launch-films.csv` |
+| Kept launch film, median | 30.0 s | recomputed, `launch-films.json` |
 | Kept films of 30 s or less | 45 of 85 | same |
 | Kept films of 60 s or less | 75 of 85 | same |
 | Median by account (kept) | Claude 52.2 s, OpenAI 30.0 s, Manus 28.5 s, xAI 19.2 s | same |
-| Teaser, median of all 25 | 13.3 s | recomputed, `teasers.csv` |
+| Teaser, median of all 25 | 13.3 s | recomputed, `teasers.json` |
 | Short teasers (15 s or less) | 15 of 25, median 11.9 s | same |
 
 ## Where the seconds go
@@ -71,7 +71,7 @@ All logged in the 24 lab films of the watched pass. Recomputed from the logs; ma
 | Mask reveal | 6 | 2% | 0.7 s |
 | Wipe | 2 | 1% | 0.25 s |
 
-Per-film counts and mixes are in `launch-films.csv` (columns `transitions_logged`, `transition_mix`) and `google-films.csv`. Eleven of the twelve exemplar moves in findings hold one element fixed while the rest changes.
+Per-film counts and mixes are in `launch-films.json` (columns `transitions_logged`, `transition_mix`) and `google-films.json`. Eleven of the twelve exemplar moves in findings hold one element fixed while the rest changes.
 
 ## Teasers
 
@@ -80,8 +80,8 @@ Per-film counts and mixes are in `launch-films.csv` (columns `transitions_logged
 | Short teasers run | 6–14 s | teaser study |
 | Where the one line of text lands (Samsung series) | 62–79% into the clip, 3–4 words | teaser study |
 | Where the name or logo lands | the last 1–4 s | teaser study |
-| Most-viewed teaser | Notion Mail, 354K views on X: a 2.6 s UI glimpse, then the wordmark | teaser study, `teasers.csv` |
-| Reveal ladder | 1 mystery, 2 metaphor, 3 partial, 4 glimpse + name, 5 demo | teaser study, `teasers.csv` column `reveal_ladder_rung` |
+| Most-viewed teaser | Notion Mail, 354K views on X: a 2.6 s UI glimpse, then the wordmark | teaser study, `teasers.json` |
+| Reveal ladder | 1 mystery, 2 metaphor, 3 partial, 4 glimpse + name, 5 demo | teaser study, `teasers.json` column `reveal_ladder_rung` |
 
 ## Frame composition
 
@@ -126,4 +126,4 @@ Measured posting-time findings are in `posting.md`. In short: on TikTok only 06:
 
 - Five accounts, one sector (AI tools), one period (August 2024 to September 2026).
 - Views were read on 30 September 2026 (X) and 7 October 2026 (YouTube) and keep changing.
-- The measured pass's per-film records were mostly lost; only 11 lab films keep a per-film `measured_cuts_per_min` in `launch-films.csv`. The account medians above were computed before the loss.
+- The measured pass's per-film records were mostly lost; only 11 lab films keep a per-film `measured_cuts_per_min` in `launch-films.json`. The account medians above were computed before the loss.

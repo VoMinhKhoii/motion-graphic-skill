@@ -4,7 +4,7 @@ Every reference film studied for the worked example (`examples/kallo-launch-film
 
 ## Coverage, honestly
 
-Counted from the CSVs:
+Counted from the JSON files:
 
 | Field | Launch films (125) | Google (38) | Teasers (25) |
 |---|---|---|---|
@@ -22,10 +22,10 @@ It is strongest on high-fidelity AI-lab launch films (OpenAI, Claude, xAI, Manus
 
 | File | Rows | What it holds |
 |---|---|---|
-| `launch-films.csv` / `.json` | 125 | Launch films from OpenAI, Claude, xAI and Manus on X: link, title, date, length, views, style tags, kept or excluded under "motion design only" and why, direction, technique-card codes, and the watched-pass transition log where one exists. |
-| `google-films.csv` / `.json` | 38 | Google films from X, used as motion vocabulary only. 8 were watched second by second. |
-| `teasers.csv` / `.json` | 25 | Pre-launch teasers from YouTube and X: length, cuts, views, reveal-ladder rung. |
-| `channels/` | 15 CSVs | Candidate lists from 20 YouTube channel scans, with likely launch and teaser films flagged. See `channels/README.md`. |
+| `launch-films.json` | 125 | Launch films from OpenAI, Claude, xAI and Manus on X: link, title, date, length, views, style tags, kept or excluded under "motion design only" and why, direction, technique-card codes, and the watched-pass transition log where one exists. |
+| `google-films.json` | 38 | Google films from X, used as motion vocabulary only. 8 were watched second by second. |
+| `teasers.json` | 25 | Pre-launch teasers from YouTube and X: length, cuts, views, reveal-ladder rung. |
+| `channels/` | 15 JSON files | Candidate lists from 20 YouTube channel scans, with likely launch and teaser films flagged. See `channels/README.md`. |
 | `accounts.md` | | Style to accounts, with each account's measured medians. |
 | `baselines.md` | | Corpus numbers to compare against: lengths, where the seconds go, the 298-transition mix, teaser timing. |
 | `posting.md` | | When and how to post the film: measured time bands, warm-up cadence, formats that spread. |
@@ -43,7 +43,7 @@ The analysis files from those passes were later deleted. This library was rebuil
 
 ## Field notes
 
-- **URLs.** The download folders were named `<account>_<media id>`, and the media id is not the post id. The post ids here come from the original listing (`launch-films.csv` keeps the media id in its own column). For Google, only some post ids could be recovered; `google-films.csv` says how each URL was matched, and leaves it blank when it could not be.
+- **URLs.** The download folders were named `<account>_<media id>`, and the media id is not the post id. The post ids here come from the original listing (`launch-films.json` keeps the media id in its own column). For Google, only some post ids could be recovered; `google-films.json` says how each URL was matched, and leaves it blank when it could not be.
 - **Dates** of X posts are decoded from the post id (X ids carry their creation time). Google rows give the media upload date instead. Teaser dates are YouTube upload dates.
 - **Style tags** come from which of the 10 directions a film belongs to (D1–D10; listed in `references/distilling.md` and written up in `research/directions.md`), plus `screen-recording` where the study notes say the film is real screen capture. Excluded films have no style tags.
 - **Technique cards** are the codes in `research/technique-cards.md` whose source or "also seen in" frames come from that film.
@@ -54,7 +54,7 @@ The analysis files from those passes were later deleted. This library was rebuil
 ## How to use it
 
 1. **Pick the style** with the owner (Step 1). Open `accounts.md` and take the accounts listed for that style as seeds for Step 3. Check the coverage table above first: for some styles there is little here. Add the wider seed list in `$SKILL/scripts/research/discover/style_seeds.md` for accounts this library has no data on, and rescan a channel with `$SKILL/scripts/research/scan_channel.sh`.
-2. **Filter the CSVs** by `style_tags` or `directions`. For each match, open the link, watch it, and decide whether it fits your brief. Sort `channels/*.csv` by `candidate` to find more.
+2. **Filter the JSON files** by `style_tags` or `directions`. For each match, open the link, watch it, and decide whether it fits your brief. Sort `channels/*.json` by `candidate` to find more.
 3. **Reuse the measurements as baselines.** `baselines.md` gives the medians of a high-fidelity product film. Compare your storyboard and your cuts against them, and measure your own style's films (Step 4) when the style differs.
 4. **Use `posting.md`** when you plan the release, and re-run its method for your own audience.
 
